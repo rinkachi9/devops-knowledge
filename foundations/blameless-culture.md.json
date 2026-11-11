@@ -1,0 +1,129 @@
+{
+  "node": {
+    "id": "foundations.blameless-culture",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "foundations",
+      "culture",
+      "postmortem",
+      "safety"
+    ],
+    "aliases": [
+      "psychological safety",
+      "blameless postmortem",
+      "just culture",
+      "Westrum typology",
+      "generative culture",
+      "learning review"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.calms",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.three-ways",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.dora-metrics",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "edmondson-1999",
+      "type": "paper",
+      "publisher": "Administrative Science Quarterly",
+      "title": "Psychological Safety and Learning Behavior in Work Teams",
+      "url": "https://doi.org/10.2307/2666999",
+      "year": 1999,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "westrum-2004",
+      "type": "paper",
+      "publisher": "Quality and Safety in Health Care",
+      "title": "A typology of organisational cultures",
+      "url": "https://doi.org/10.1136/qshc.2003.009522",
+      "year": 2004,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "allspaw-blameless",
+      "type": "website",
+      "publisher": "Etsy",
+      "title": "Blameless PostMortems and a Just Culture",
+      "url": "https://www.etsy.com/codeascraft/blameless-postmortems",
+      "year": 2012,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sre-postmortem",
+      "type": "book",
+      "publisher": "Google",
+      "title": "Site Reliability Engineering, chapter 15: Postmortem Culture",
+      "url": "https://sre.google/sre-book/postmortem-culture/",
+      "year": 2016,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dekker-just",
+      "type": "book",
+      "publisher": "Ashgate",
+      "title": "Just Culture: Balancing Safety and Accountability",
+      "url": "https://www.routledge.com/Just-Culture-Restoring-Trust-and-Accountability-in-Your-Organization-Third-Edition/Dekker/p/book/9781472475787",
+      "year": 2007,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cook-complex",
+      "type": "paper",
+      "publisher": "Cognitive Technologies Laboratory",
+      "title": "How Complex Systems Fail",
+      "url": "https://how.complexsystems.fail/",
+      "year": 1998,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Psychological safety",
+      "anchor": "#psychological-safety",
+      "definition": "A shared belief that the team is safe for interpersonal risk taking."
+    },
+    {
+      "term": "Generative culture",
+      "anchor": "#westrums-typology-of-organizational-cultures",
+      "definition": "A performance-oriented culture in which information flows freely and failure leads to inquiry."
+    },
+    {
+      "term": "Just culture",
+      "anchor": "#just-culture",
+      "definition": "An approach that responds differently to human error, at-risk behavior and reckless behavior."
+    },
+    {
+      "term": "Blameless postmortem",
+      "anchor": "#blameless-postmortems",
+      "definition": "An incident review that seeks systemic causes and improvements instead of a culprit."
+    },
+    {
+      "term": "Hindsight bias",
+      "anchor": "#blameless-postmortems",
+      "definition": "Seeing past events as more predictable than they were when they happened."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

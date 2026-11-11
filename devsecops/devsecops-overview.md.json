@@ -1,0 +1,132 @@
+{
+  "node": {
+    "id": "devsecops.devsecops-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "devsecops",
+      "security",
+      "sdlc",
+      "shift-left"
+    ],
+    "aliases": [
+      "DevSecOps",
+      "shift left",
+      "secure SDLC",
+      "SSDF",
+      "NIST SP 800-218",
+      "security champions",
+      "vulnerability prioritization",
+      "EPSS",
+      "KEV"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.three-ways",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-ssdf",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "Secure Software Development Framework (SSDF) Version 1.1, SP 800-218",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-204d",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "Strategies for the Integration of Software Supply Chain Security in DevSecOps CI/CD Pipelines, SP 800-204D",
+      "url": "https://csrc.nist.gov/pubs/sp/800/204/d/final",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-samm",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP SAMM",
+      "url": "https://owaspsamm.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-devsecops",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP DevSecOps Guideline",
+      "url": "https://owasp.org/www-project-devsecops-guideline/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-shift-left",
+      "type": "documentation",
+      "publisher": "DORA",
+      "title": "Shift left on security",
+      "url": "https://dora.dev/capabilities/shifting-left-on-security/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "epss",
+      "type": "website",
+      "publisher": "FIRST",
+      "title": "Exploit Prediction Scoring System",
+      "url": "https://www.first.org/epss/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cisa-kev",
+      "type": "website",
+      "publisher": "CISA",
+      "title": "Known Exploited Vulnerabilities Catalog",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DevSecOps",
+      "anchor": "#the-problem-devsecops-solves",
+      "definition": "Security integrated into every stage of the DevOps lifecycle as a shared, automated responsibility."
+    },
+    {
+      "term": "Shift left",
+      "anchor": "#principles",
+      "definition": "Doing security work as early as possible in design and code."
+    },
+    {
+      "term": "NIST SSDF",
+      "anchor": "#frameworks-and-standards",
+      "definition": "NIST's secure development practices in four groups: PO, PS, PW and RV."
+    },
+    {
+      "term": "EPSS",
+      "anchor": "#prioritizing-vulnerabilities",
+      "definition": "A score estimating the probability that a vulnerability is exploited in the next 30 days."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

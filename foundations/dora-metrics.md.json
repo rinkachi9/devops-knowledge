@@ -1,0 +1,153 @@
+{
+  "node": {
+    "id": "foundations.dora-metrics",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "foundations",
+      "dora",
+      "metrics",
+      "research"
+    ],
+    "aliases": [
+      "DORA",
+      "four key metrics",
+      "five keys",
+      "change lead time",
+      "deployment frequency",
+      "change fail rate",
+      "failed deployment recovery time",
+      "deployment rework rate",
+      "MTTR",
+      "Accelerate",
+      "State of DevOps report"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.calms",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "dora-history",
+      "type": "website",
+      "publisher": "DORA",
+      "title": "DORA metrics: history",
+      "url": "https://dora.dev/guides/dora-metrics/history/",
+      "year": 2026,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-capabilities",
+      "type": "documentation",
+      "publisher": "DORA",
+      "title": "DORA capabilities",
+      "url": "https://dora.dev/capabilities/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "accelerate",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "Accelerate: The Science of Lean Software and DevOps",
+      "url": "https://itrevolution.com/product/accelerate/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-2024",
+      "type": "report",
+      "publisher": "DORA, Google Cloud",
+      "title": "Accelerate State of DevOps Report 2024",
+      "url": "https://dora.dev/research/2024/dora-report/",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-2025",
+      "type": "report",
+      "publisher": "DORA, Google Cloud",
+      "title": "State of AI-assisted Software Development 2025",
+      "url": "https://dora.dev/research/2025/dora-report/",
+      "year": 2025,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "space",
+      "type": "paper",
+      "publisher": "ACM Queue",
+      "title": "The SPACE of Developer Productivity",
+      "url": "https://queue.acm.org/detail.cfm?id=3454124",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "devex",
+      "type": "paper",
+      "publisher": "ACM Queue",
+      "title": "DevEx: What Actually Drives Productivity",
+      "url": "https://queue.acm.org/detail.cfm?id=3595878",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Change lead time",
+      "anchor": "#the-five-metrics",
+      "definition": "Time from a commit to the change running successfully in production."
+    },
+    {
+      "term": "Deployment frequency",
+      "anchor": "#the-five-metrics",
+      "definition": "How often changes are deployed to production."
+    },
+    {
+      "term": "Failed deployment recovery time",
+      "anchor": "#the-five-metrics",
+      "definition": "Time to recover from a deployment that fails and needs immediate intervention."
+    },
+    {
+      "term": "Change fail rate",
+      "anchor": "#the-five-metrics",
+      "definition": "Share of deployments that need immediate intervention such as a rollback or hotfix."
+    },
+    {
+      "term": "Deployment rework rate",
+      "anchor": "#the-five-metrics",
+      "definition": "Share of deployments that are unplanned fixes for production incidents."
+    },
+    {
+      "term": "Capability model",
+      "anchor": "#capabilities",
+      "definition": "An improvement approach that links research-backed capabilities to outcomes instead of fixed levels."
+    },
+    {
+      "term": "J-curve",
+      "anchor": "#the-j-curve-and-other-findings-worth-knowing",
+      "definition": "The temporary drop in performance at the start of a transformation before improvement."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

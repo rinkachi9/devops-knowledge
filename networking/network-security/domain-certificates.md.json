@@ -1,0 +1,145 @@
+{
+  "node": {
+    "id": "networking.network-security.domain-certificates",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 4,
+    "tags": [
+      "networking",
+      "network-security",
+      "tls",
+      "certificates",
+      "dns",
+      "pki"
+    ],
+    "aliases": [
+      "certificates for domains",
+      "TLS certificates",
+      "CAA",
+      "Certificate Transparency",
+      "domain control validation",
+      "DCV",
+      "DANE",
+      "TLSA",
+      "certificate lifecycle"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.ssl-and-tls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.network-security.acme",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.dns.dns-records",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.dns.dns-security",
+      "rel": "related"
+    },
+    {
+      "to": "networking.network-security.lets-encrypt",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cab-br",
+      "type": "standard",
+      "publisher": "CA/Browser Forum",
+      "title": "Baseline Requirements for TLS Server Certificates",
+      "url": "https://cabforum.org/working-groups/server/baseline-requirements/documents/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8659",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8659: DNS Certification Authority Authorization (CAA) Resource Record",
+      "url": "https://www.rfc-editor.org/rfc/rfc8659",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8657",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8657: CAA Record Extensions for Account URI and ACME Method Binding",
+      "url": "https://www.rfc-editor.org/rfc/rfc8657",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc6962",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 6962: Certificate Transparency",
+      "url": "https://www.rfc-editor.org/rfc/rfc6962",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc7671",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7671: The DANE Protocol: Updates and Operational Guidance",
+      "url": "https://www.rfc-editor.org/rfc/rfc7671",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cert-manager",
+      "type": "documentation",
+      "publisher": "cert-manager project",
+      "title": "cert-manager documentation",
+      "url": "https://cert-manager.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Domain control validation",
+      "anchor": "#domain-control-validation",
+      "definition": "The CA's check that the requester controls each name in a certificate."
+    },
+    {
+      "term": "CAA record",
+      "anchor": "#dns-records-that-matter-for-certificates",
+      "definition": "A DNS record listing which CAs may issue certificates for a domain."
+    },
+    {
+      "term": "CAA tree climbing",
+      "anchor": "#dns-records-that-matter-for-certificates",
+      "definition": "The CA's search for CAA from the requested name up toward the root, stopping at the first record set."
+    },
+    {
+      "term": "Certificate Transparency",
+      "anchor": "#certificate-transparency",
+      "definition": "Public append-only logs of every publicly trusted certificate."
+    },
+    {
+      "term": "SCT",
+      "anchor": "#certificate-transparency",
+      "definition": "A signed certificate timestamp proving a certificate was submitted to a CT log."
+    },
+    {
+      "term": "TLSA record",
+      "anchor": "#dns-records-that-matter-for-certificates",
+      "definition": "A DNSSEC-protected record that pins the certificate or key a service must present."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

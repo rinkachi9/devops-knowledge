@@ -22,13 +22,24 @@
       "SOA record",
       "SRV record",
       "PTR record",
-      "zone file"
+      "zone file",
+      "HTTPS record",
+      "SVCB",
+      "CAA record",
+      "wildcard record",
+      "RRset",
+      "TTL"
     ]
   },
   "links": [
     {
       "to": "networking.application-layer.dns.dns-overview",
       "rel": "prerequisite"
+    },
+    {
+      "to": "networking.network-security.domain-certificates",
+      "rel": "related",
+      "note": "CAA and ACME challenge records"
     }
   ],
   "sources": [
@@ -68,6 +79,16 @@
       "publisher": "IANA",
       "title": "Domain Name System (DNS) Parameters",
       "url": "https://www.iana.org/assignments/dns-parameters/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc9460",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 9460: Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9460",
+      "year": 2023,
       "verified": false,
       "checked": "2026-11"
     }

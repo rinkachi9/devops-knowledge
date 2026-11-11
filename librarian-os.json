@@ -123,7 +123,9 @@
       "_assets/operating-systems/startup-management-systemd-unit-file.png": "Figure used in the note \"Table of contents\".",
       "_assets/operating-systems/threads-single-and-multi-threaded-process.png": "Figure used in the note \"Table of contents\".",
       "_assets/operating-systems/threads-user-and-kernel-level-threads.png": "Figure used in the note \"Table of contents\".",
-      "librarian-os.json": "Configuration for Librarian OS: project name, entry points and rules."
+      "librarian-os.json": "Configuration for Librarian OS: project name, entry points and rules.",
+      "_assets/foundations/three-ways-flow-feedback-learning.svg": "Figure used in the note \"The Three Ways\".",
+      "_assets/foundations/team-topologies-team-types.svg": "Figure used in the note \"Team Topologies and platform engineering\"."
     }
   },
   "rules": {

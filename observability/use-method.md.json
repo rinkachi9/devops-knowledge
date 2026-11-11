@@ -1,0 +1,115 @@
+{
+  "node": {
+    "id": "observability.use-method",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "observability",
+      "performance",
+      "methodology",
+      "linux"
+    ],
+    "aliases": [
+      "USE",
+      "Utilization Saturation Errors",
+      "Brendan Gregg checklist",
+      "resource bottleneck analysis"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "operating-systems.process-management.cpu-usage",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "operating-systems.storage-and-io.io-management",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "gregg-use",
+      "type": "website",
+      "publisher": "Brendan Gregg",
+      "title": "The USE Method",
+      "url": "https://www.brendangregg.com/usemethod.html",
+      "year": 2012,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gregg-use-linux",
+      "type": "website",
+      "publisher": "Brendan Gregg",
+      "title": "USE Method: Linux Performance Checklist",
+      "url": "https://www.brendangregg.com/USEmethod/use-linux.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "acm-queue-perf",
+      "type": "paper",
+      "publisher": "ACM Queue",
+      "title": "Thinking Methodically about Performance",
+      "url": "https://queue.acm.org/detail.cfm?id=2413037",
+      "year": 2012,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "systems-performance",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "Systems Performance: Enterprise and the Cloud, 2nd edition",
+      "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "kernel-psi",
+      "type": "documentation",
+      "publisher": "Linux kernel",
+      "title": "Pressure Stall Information",
+      "url": "https://docs.kernel.org/accounting/psi.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "USE method",
+      "anchor": "#definitions",
+      "definition": "A checklist that examines the utilization, saturation and errors of every resource."
+    },
+    {
+      "term": "Utilization",
+      "anchor": "#definitions",
+      "definition": "The share of time a resource was busy, or the share of its capacity in use."
+    },
+    {
+      "term": "Saturation",
+      "anchor": "#definitions",
+      "definition": "The amount of extra work a resource cannot service yet, usually queued."
+    },
+    {
+      "term": "Anti-method",
+      "anchor": "#the-problem-the-method-solves",
+      "definition": "A habitual but unreliable way of investigating performance, such as the streetlight anti-method."
+    },
+    {
+      "term": "Pressure stall information",
+      "anchor": "#linux-checklist",
+      "definition": "Linux metrics of the share of time tasks were stalled waiting for CPU, memory or I/O."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

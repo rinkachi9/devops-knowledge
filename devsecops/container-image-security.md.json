@@ -1,0 +1,106 @@
+{
+  "node": {
+    "id": "devsecops.container-image-security",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "devsecops",
+      "security",
+      "containers",
+      "images"
+    ],
+    "aliases": [
+      "image scanning",
+      "distroless",
+      "NIST SP 800-190",
+      "Trivy",
+      "Grype",
+      "multi-stage build",
+      "base image"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers-and-virtualization.docker",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.application-security-testing",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.software-supply-chain-security",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-190",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "Application Container Security Guide, SP 800-190",
+      "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cis-docker",
+      "type": "standard",
+      "publisher": "Center for Internet Security",
+      "title": "CIS Docker Benchmark",
+      "url": "https://www.cisecurity.org/benchmark/docker",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "docker-best",
+      "type": "documentation",
+      "publisher": "Docker",
+      "title": "Dockerfile best practices",
+      "url": "https://docs.docker.com/build/building/best-practices/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "trivy",
+      "type": "documentation",
+      "publisher": "Aqua Security",
+      "title": "Trivy documentation",
+      "url": "https://trivy.dev/latest/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "k8s-pss",
+      "type": "documentation",
+      "publisher": "Kubernetes",
+      "title": "Pod Security Standards",
+      "url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Base image",
+      "anchor": "#choosing-a-base-image",
+      "definition": "The image a container image is built on, which brings its OS packages and vulnerabilities."
+    },
+    {
+      "term": "Distroless image",
+      "anchor": "#choosing-a-base-image",
+      "definition": "A minimal image with only the application runtime and no shell or package manager."
+    },
+    {
+      "term": "Multi-stage build",
+      "anchor": "#building-securely",
+      "definition": "A Dockerfile with separate build and runtime stages so build tools stay out of the final image."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "node": {
+    "id": "devsecops.policy-as-code",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "devsecops",
+      "security",
+      "policy",
+      "governance",
+      "kubernetes"
+    ],
+    "aliases": [
+      "OPA",
+      "Open Policy Agent",
+      "Rego",
+      "Conftest",
+      "Gatekeeper",
+      "Kyverno",
+      "ValidatingAdmissionPolicy",
+      "CEL",
+      "Sentinel",
+      "guardrails"
+    ]
+  },
+  "links": [
+    {
+      "to": "devsecops.devsecops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "infrastructure-as-code.infrastructure-as-code-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "opa",
+      "type": "documentation",
+      "publisher": "OPA, CNCF",
+      "title": "Open Policy Agent documentation",
+      "url": "https://www.openpolicyagent.org/docs/latest/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "conftest",
+      "type": "documentation",
+      "publisher": "Open Policy Agent",
+      "title": "Conftest",
+      "url": "https://www.conftest.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "kyverno",
+      "type": "documentation",
+      "publisher": "Kyverno, CNCF",
+      "title": "Kyverno documentation",
+      "url": "https://kyverno.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "k8s-vap",
+      "type": "documentation",
+      "publisher": "Kubernetes",
+      "title": "Validating Admission Policy",
+      "url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cel",
+      "type": "documentation",
+      "publisher": "Google",
+      "title": "Common Expression Language",
+      "url": "https://cel.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Policy as code",
+      "anchor": "#the-problem-policy-as-code-solves",
+      "definition": "Organizational rules expressed as versioned, tested code evaluated automatically."
+    },
+    {
+      "term": "Policy engine",
+      "anchor": "#how-a-policy-engine-works",
+      "definition": "Software that evaluates structured input against policies and returns a decision with reasons."
+    },
+    {
+      "term": "Admission control",
+      "anchor": "#enforcement-points",
+      "definition": "Enforcement of policies on objects submitted to the Kubernetes API server."
+    },
+    {
+      "term": "Rego",
+      "anchor": "#the-main-engines",
+      "definition": "The declarative policy language of Open Policy Agent."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

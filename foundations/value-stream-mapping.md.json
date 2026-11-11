@@ -1,0 +1,103 @@
+{
+  "node": {
+    "id": "foundations.value-stream-mapping",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "foundations",
+      "lean",
+      "flow",
+      "value-stream"
+    ],
+    "aliases": [
+      "VSM",
+      "value stream",
+      "flow efficiency",
+      "activity ratio",
+      "percent complete and accurate",
+      "value stream management"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.three-ways",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.dora-metrics",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.calms",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "learning-to-see",
+      "type": "book",
+      "publisher": "Lean Enterprise Institute",
+      "title": "Learning to See: Value Stream Mapping to Add Value and Eliminate MUDA",
+      "url": "https://www.lean.org/store/book/learning-to-see/",
+      "year": 1999,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "martin-vsm",
+      "type": "book",
+      "publisher": "McGraw-Hill",
+      "title": "Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation",
+      "url": "https://ksmartin.com/books/value-stream-mapping/",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-vsm",
+      "type": "documentation",
+      "publisher": "DORA",
+      "title": "Visibility of work in the value stream",
+      "url": "https://dora.dev/capabilities/visibility-of-work-in-the-value-stream/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "project-to-product",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "Project to Product",
+      "url": "https://itrevolution.com/product/project-to-product/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Value stream",
+      "anchor": "#key-terms-and-metrics",
+      "definition": "All activities from a customer request to delivered value."
+    },
+    {
+      "term": "Process time",
+      "anchor": "#key-terms-and-metrics",
+      "definition": "Time a work item is actively worked on in a step."
+    },
+    {
+      "term": "Percent complete and accurate",
+      "anchor": "#key-terms-and-metrics",
+      "definition": "Share of a step's output the next step can use without correction."
+    },
+    {
+      "term": "Activity ratio",
+      "anchor": "#key-terms-and-metrics",
+      "definition": "Total process time divided by total lead time, also called flow efficiency."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

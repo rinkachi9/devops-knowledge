@@ -1,0 +1,137 @@
+{
+  "node": {
+    "id": "networking.network-security.acme",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "network-security",
+      "tls",
+      "certificates",
+      "automation"
+    ],
+    "aliases": [
+      "Automatic Certificate Management Environment",
+      "RFC 8555",
+      "http-01",
+      "dns-01",
+      "tls-alpn-01",
+      "ACME Renewal Information",
+      "ARI",
+      "Certbot",
+      "cert-manager"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.ssl-and-tls",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.dns.dns-records",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.http-and-https",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc8555",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8555: Automatic Certificate Management Environment (ACME)",
+      "url": "https://www.rfc-editor.org/rfc/rfc8555",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8737",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8737: ACME TLS ALPN Challenge Extension",
+      "url": "https://www.rfc-editor.org/rfc/rfc8737",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc9773",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 9773: ACME Renewal Information (ARI) Extension",
+      "url": "https://www.rfc-editor.org/rfc/rfc9773",
+      "year": 2025,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8657",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8657: CAA Record Extensions for Account URI and ACME Method Binding",
+      "url": "https://www.rfc-editor.org/rfc/rfc8657",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-challenges",
+      "type": "documentation",
+      "publisher": "Let's Encrypt",
+      "title": "Challenge Types",
+      "url": "https://letsencrypt.org/docs/challenge-types/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-dns-persist",
+      "type": "website",
+      "publisher": "Let's Encrypt",
+      "title": "DNS-PERSIST-01: A New Model for DNS-based Challenge Validation",
+      "url": "https://letsencrypt.org/2026/02/18/dns-persist-01.html",
+      "year": 2026,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "ACME",
+      "anchor": "#the-problem-acme-solves",
+      "definition": "A protocol that automates obtaining, renewing and revoking certificates from a CA."
+    },
+    {
+      "term": "Order",
+      "anchor": "#actors-and-resources",
+      "definition": "An ACME request for a certificate covering a set of identifiers."
+    },
+    {
+      "term": "Challenge",
+      "anchor": "#challenge-types",
+      "definition": "A task that proves control of an identifier, such as http-01, dns-01 or tls-alpn-01."
+    },
+    {
+      "term": "Key authorization",
+      "anchor": "#challenge-types",
+      "definition": "The challenge token joined with the account key thumbprint, which binds a proof to the account."
+    },
+    {
+      "term": "ARI",
+      "anchor": "#renewal-revocation-and-account-management",
+      "definition": "An ACME extension in which the CA suggests a renewal window for each certificate."
+    },
+    {
+      "term": "External Account Binding",
+      "anchor": "#extensions-and-related-specifications",
+      "definition": "A MAC-based link between an ACME account and an existing customer account at a CA."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

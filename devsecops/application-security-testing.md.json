@@ -1,0 +1,118 @@
+{
+  "node": {
+    "id": "devsecops.application-security-testing",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "devsecops",
+      "security",
+      "testing",
+      "sast",
+      "dast",
+      "sca"
+    ],
+    "aliases": [
+      "SAST",
+      "DAST",
+      "SCA",
+      "IAST",
+      "fuzzing",
+      "software composition analysis",
+      "static analysis",
+      "SARIF",
+      "Semgrep",
+      "CodeQL",
+      "ZAP"
+    ]
+  },
+  "links": [
+    {
+      "to": "devsecops.devsecops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-devsecops",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP DevSecOps Guideline",
+      "url": "https://owasp.org/www-project-devsecops-guideline/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-wstg",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "Web Security Testing Guide",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cwe-top25",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "CWE Top 25 Most Dangerous Software Weaknesses",
+      "url": "https://cwe.mitre.org/top25/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sarif",
+      "type": "standard",
+      "publisher": "OASIS",
+      "title": "Static Analysis Results Interchange Format (SARIF) Version 2.1.0",
+      "url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "osv",
+      "type": "website",
+      "publisher": "OpenSSF",
+      "title": "OSV: Open Source Vulnerabilities",
+      "url": "https://osv.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "SAST",
+      "anchor": "#sast-static-application-security-testing",
+      "definition": "Static analysis of source code for insecure patterns without running it."
+    },
+    {
+      "term": "SCA",
+      "anchor": "#sca-software-composition-analysis",
+      "definition": "Inventory of third-party components matched against vulnerability and license data."
+    },
+    {
+      "term": "DAST",
+      "anchor": "#dast-dynamic-application-security-testing",
+      "definition": "Testing a running application from the outside with crafted requests."
+    },
+    {
+      "term": "Taint analysis",
+      "anchor": "#sast-static-application-security-testing",
+      "definition": "Tracking untrusted input from a source to a dangerous sink without a sanitizer."
+    },
+    {
+      "term": "Diff-aware gating",
+      "anchor": "#making-findings-actionable",
+      "definition": "Blocking a merge only on findings introduced by the change."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

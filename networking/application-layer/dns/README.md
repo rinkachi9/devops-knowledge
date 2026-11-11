@@ -19,8 +19,8 @@ flowchart LR
 
 ## Notes in reading order
 
-1. [DNS overview](dns-overview.md): resolvers, root, TLD and authoritative servers, queries and caching.
-2. [DNS records](dns-records.md): A, AAAA, CNAME, MX, TXT, NS, SOA, SRV, PTR and specialized types.
+1. [DNS overview](dns-overview.md): resolution, delegation and glue, the message format, caching, negative answers and resilience.
+2. [DNS records](dns-records.md): A, AAAA, CNAME, MX, TXT, NS, SOA, SRV, PTR, CAA, HTTPS, wildcards and TTL choices.
 3. [Domain names](domain-names.md): structure, URLs, registrars and registries.
 4. [DNS security](dns-security.md): attacks, DNSSEC, encrypted DNS and DNS firewalls.
 

@@ -53,16 +53,16 @@ The top level follows the skill groups of the [roadmap.sh DevOps roadmap](https:
 
 | Area | What it covers |
 | --- | --- |
-| [Foundations](foundations/README.md) | What DevOps is: culture, principles, lifecycle, DORA metrics. |
+| [Foundations](foundations/README.md) | What DevOps is: CALMS, the Three Ways, DORA metrics and capabilities, value stream mapping, Team Topologies and platform engineering, blameless culture, maturity models. |
 | [Operating systems](operating-systems/README.md) | OS concepts, processes, memory, file systems and I/O, permissions, boot and systemd, shell, distributions. |
-| [Networking](networking/README.md) | Models, link, internet, transport and application layers, DNS, email, network security, traffic management, operations. |
+| [Networking](networking/README.md) | Models, link, internet, transport and application layers, DNS, email, network security with TLS certificates and ACME, traffic management, operations. |
 | [Version control](version-control/README.md) | Git, branching strategies, repository hosting (planned). |
 | [CI/CD](ci-cd/README.md) | Continuous integration, delivery and deployment, GitOps, Jenkins. |
 | [Infrastructure as code](infrastructure-as-code/README.md) | IaC concepts and configuration management; Terraform lives in its own repository. |
 | [Containers and virtualization](containers-and-virtualization/README.md) | Hypervisors and virtual machines, Docker. |
 | [Cloud computing](cloud-computing/README.md) | Cloud providers, IaaS, PaaS, serverless. |
-| [Observability](observability/README.md) | Observability, monitoring, monitoring tools, log management. |
-| [DevSecOps](devsecops/README.md) | Secrets management and security in delivery. |
+| [Observability](observability/README.md) | Observability, monitoring, the USE and RED methods, monitoring tools, log management. |
+| [DevSecOps](devsecops/README.md) | Threat modeling, secrets, application security testing, supply chain security, container images, policy as code, CI/CD security. |
 | [Site reliability engineering](site-reliability-engineering/README.md) | SLOs, error budgets, incidents, postmortems (planned). |
 | [Data processing](data-processing/README.md) | ETL and operational data pipelines. |
 

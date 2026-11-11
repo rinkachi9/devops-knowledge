@@ -1,0 +1,140 @@
+{
+  "node": {
+    "id": "devsecops.software-supply-chain-security",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 5,
+    "tags": [
+      "devsecops",
+      "security",
+      "supply-chain",
+      "sbom",
+      "signing"
+    ],
+    "aliases": [
+      "SBOM",
+      "SLSA",
+      "provenance",
+      "Sigstore",
+      "cosign",
+      "VEX",
+      "in-toto",
+      "dependency confusion",
+      "SPDX",
+      "CycloneDX",
+      "reproducible builds"
+    ]
+  },
+  "links": [
+    {
+      "to": "devsecops.devsecops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.application-security-testing",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "slsa",
+      "type": "standard",
+      "publisher": "OpenSSF",
+      "title": "SLSA specification",
+      "url": "https://slsa.dev/spec/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sigstore",
+      "type": "documentation",
+      "publisher": "OpenSSF",
+      "title": "Sigstore documentation",
+      "url": "https://docs.sigstore.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ntia-sbom",
+      "type": "report",
+      "publisher": "NTIA",
+      "title": "The Minimum Elements For a Software Bill of Materials",
+      "url": "https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "spdx",
+      "type": "standard",
+      "publisher": "Linux Foundation",
+      "title": "SPDX",
+      "url": "https://spdx.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cyclonedx",
+      "type": "standard",
+      "publisher": "OWASP",
+      "title": "CycloneDX",
+      "url": "https://cyclonedx.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-204d",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-204D",
+      "url": "https://csrc.nist.gov/pubs/sp/800/204/d/final",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cve-2024-3094",
+      "type": "website",
+      "publisher": "NVD",
+      "title": "CVE-2024-3094",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3094",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Software supply chain",
+      "anchor": "#why-the-supply-chain-became-a-target",
+      "definition": "Everything that goes into producing and delivering software, from source to deployment."
+    },
+    {
+      "term": "SBOM",
+      "anchor": "#know-what-you-ship-sboms",
+      "definition": "A machine-readable inventory of the components in a piece of software."
+    },
+    {
+      "term": "VEX",
+      "anchor": "#know-what-you-ship-sboms",
+      "definition": "A statement whether a product is affected by a vulnerability in one of its components."
+    },
+    {
+      "term": "Provenance",
+      "anchor": "#prove-how-it-was-built-provenance-and-slsa",
+      "definition": "Verifiable information about how, where and from what an artifact was built."
+    },
+    {
+      "term": "Keyless signing",
+      "anchor": "#verify-before-you-trust-signing",
+      "definition": "Signing with an ephemeral key and a short-lived certificate bound to an OIDC identity."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

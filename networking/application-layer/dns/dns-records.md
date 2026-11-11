@@ -218,6 +218,98 @@ Uses:
 - **Email delivery troubleshooting**: missing or wrong PTR records are a common reason for rejected mail.
 - **Logging**: converting IP addresses in logs into names.
 
+### CAA record
+
+A Certification Authority Authorization (CAA, RFC 8659) record lists the certificate authorities that may issue certificates for a name. CAs must check it before issuing; without any CAA record, every CA may issue.
+
+```text
+example.com.  3600 IN CAA 0 issue "letsencrypt.org"
+example.com.  3600 IN CAA 0 issuewild ";"
+example.com.  3600 IN CAA 0 iodef "mailto:security@example.com"
+```
+
+The record has a flag (0, or 128 for critical), a tag (`issue`, `issuewild`, `iodef`) and a value. The lookup climbs the tree from the requested name toward the root and stops at the first name with CAA records, so a CAA record on a subdomain replaces the parent's policy. RFC 8657 adds `accounturi` and `validationmethods` parameters that bind issuance to one ACME account and chosen validation methods. The full rules and their role in certificate automation are in [Certificates for domains](../../network-security/domain-certificates.md).
+
+### HTTPS and SVCB records
+
+The service binding records SVCB and its HTTP-specific form HTTPS (RFC 9460, 2023) tell clients how to connect before the first packet: which protocols the endpoint supports (HTTP/3 over QUIC, HTTP/2), alternative endpoints and ports, IP address hints and Encrypted Client Hello (ECH) keys. Browsers query HTTPS records in parallel with A and AAAA.
+
+```text
+; ServiceMode: priority 1, the target "." means "this name"
+example.com.      300 IN HTTPS 1 . alpn="h3,h2" ipv4hint=192.0.2.1 ipv6hint=2001:db8::1
+; AliasMode: priority 0 aliases the apex to another name, which a CNAME cannot do
+example.com.      300 IN HTTPS 0 lb.cdn.example.net.
+```
+
+| Mode | Priority | Purpose |
+| --- | --- | --- |
+| AliasMode | 0 | Points the name to another name for HTTPS connections, also at the zone apex |
+| ServiceMode | 1 or higher | Connection parameters (`alpn`, `port`, `ipv4hint`, `ipv6hint`, `ech`); lower values are preferred |
+
+HTTPS records let clients start with HTTP/3 directly instead of discovering it through an `Alt-Svc` header on a first HTTP/2 connection, and they deliver ECH keys. They do not replace A and AAAA records; clients still need addresses (the hints only speed things up).
+
+### Wildcard records
+
+A wildcard record (`*.example.com`, RFC 1034 and RFC 4592) answers for names that do not exist in the zone:
+
+```text
+*.example.com.     300 IN A     192.0.2.80
+api.example.com.   300 IN A     192.0.2.10
+```
+
+`foo.example.com` and `bar.example.com` get `192.0.2.80`; `api.example.com` gets its own record; and `x.api.example.com` gets NXDOMAIN, because its closest existing ancestor (the *closest encloser*) is `api.example.com`, which has no wildcard below it; `*.example.com` applies only to names whose closest encloser is `example.com`. The wildcard does not match `example.com` itself, and it does not cover a name that exists with other record types: if `mail.example.com` has only an MX record, a query for its A record returns NODATA instead of the wildcard address. Wildcards hide typos (every misspelled name resolves) and can surprise certificate validation and mail delivery, so use them deliberately.
+
+### Record sets and TTL rules
+
+All records with the same name, class and type form a *resource record set* (RRset), which is the unit that is cached, transferred and signed with DNSSEC. Records in one RRset should have the same TTL (RFC 2181); a server that receives differing TTLs treats them as an error and uses the lowest. A response never contains half an RRset.
+
+### DNSSEC records in context
+
+DNSSEC adds records that let resolvers verify answers ([DNS security](dns-security.md)):
+
+```mermaid
+flowchart TB
+  rootk["Root zone<br/>DNSKEY, trust anchor"] -->|"DS for com"| comk["com zone<br/>DNSKEY"]
+  comk -->|"DS for example.com"| exk["example.com zone<br/>DNSKEY: KSK and ZSK"]
+  exk -->|"RRSIG signs"| rr["www.example.com A 192.0.2.1"]
+  exk -->|"NSEC or NSEC3"| neg["Proof that a name does not exist"]
+```
+
+The diagram shows the chain of trust: each parent publishes a DS record (a hash of the child's key), each zone signs its RRsets with RRSIG records made with its DNSKEY, and NSEC or NSEC3 records prove non-existence. A DS record at the registrar that does not match the zone's keys breaks resolution for every validating resolver, which is the most common DNSSEC outage.
+
+### Choosing TTLs
+
+| Record | Typical TTL | Reason |
+| --- | --- | --- |
+| NS and glue at the parent | 1 to 2 days (set by the TLD) | Delegations change rarely; long TTLs protect against outages |
+| SOA, MX, TXT for SPF, DKIM, DMARC, CAA | 1 to 24 hours | Rarely changed, read often |
+| A, AAAA, CNAME of stable services | 1 hour | Balance between cache efficiency and change speed |
+| A, AAAA, CNAME with DNS failover or blue-green switching | 30 to 300 seconds | Changes must take effect quickly |
+| `_acme-challenge` TXT | 60 to 300 seconds | Short-lived, may be re-created during validation retries |
+| Negative TTL (SOA minimum) | 5 minutes to 1 hour | How long a missing name stays missing in caches |
+
+Before a planned change, lower the TTL at least one old TTL in advance, make the change, then raise it again. The effect of the TTL on authoritative query load is shown in [DNS overview](dns-overview.md#ttl-and-load).
+
+### Choosing a record type
+
+```mermaid
+flowchart TD
+  start{"What should the name do?"} -->|"point to an address"| addr{"IPv4 or IPv6?"}
+  addr -->|"IPv4"| a["A"]
+  addr -->|"IPv6"| aaaa["AAAA"]
+  start -->|"alias another name"| apex{"At the zone apex?"}
+  apex -->|"no"| cname["CNAME"]
+  apex -->|"yes"| alias["HTTPS AliasMode,<br/>or provider ALIAS or flattening"]
+  start -->|"receive email"| mx["MX, plus SPF, DKIM, DMARC TXT"]
+  start -->|"locate a service with port"| srv["SRV or SVCB"]
+  start -->|"delegate a subdomain"| ns["NS in the parent zone"]
+  start -->|"restrict certificate issuance"| caa["CAA"]
+  start -->|"prove ownership or publish a policy"| txt["TXT"]
+  start -->|"name for an IP address"| ptr["PTR in the reverse zone"]
+```
+
+The decision tree covers the common cases from the sections above.
+
 ## Worked example
 
 Inspect the records of a domain with `dig`. Untested; dig 9.18, checked 2026-11. Values are illustrative.
@@ -260,6 +352,9 @@ Moving the website to a new server with minimal disruption:
 2. Two MX records have priorities 10 and 20. Which server receives mail normally?
 3. Where is the PTR record for `198.51.100.42` stored?
 4. SRV records with priority 10 have weights 6 and 2. What share of traffic does each receive?
+5. A zone has `*.example.com A 192.0.2.80` and `api.example.com A 192.0.2.10`. What do `www.example.com` and `v2.api.example.com` resolve to?
+6. How can a zone apex be aliased to a CDN name without a CNAME, in a standard way?
+7. A CAA record exists only at `example.com` and allows Let's Encrypt. May Let's Encrypt issue for `shop.example.com`?
 
 Answers:
 
@@ -267,6 +362,9 @@ Answers:
 2. The one with priority 10.
 3. At `42.100.51.198.in-addr.arpa`.
 4. 75 percent and 25 percent.
+5. `www.example.com` gets 192.0.2.80 from the wildcard; `v2.api.example.com` gets NXDOMAIN, because its closest existing ancestor is `api.example.com`, which has no wildcard.
+6. With an HTTPS record in AliasMode (priority 0) pointing to the CDN name, for clients that support HTTPS records; A and AAAA records or provider flattening are still needed for other clients.
+7. Yes. With no CAA at `shop.example.com`, the lookup climbs to `example.com` and applies its policy.
 
 ## Further reading
 
@@ -274,5 +372,7 @@ Answers:
 - [RFC 2782: A DNS RR for specifying the location of services (DNS SRV)](https://www.rfc-editor.org/rfc/rfc2782) (IETF, 2000).
 - [RFC 2181: Clarifications to the DNS Specification](https://www.rfc-editor.org/rfc/rfc2181) (IETF, 1997).
 - [RFC 8659: DNS Certification Authority Authorization (CAA)](https://www.rfc-editor.org/rfc/rfc8659) (IETF, 2019).
+- [RFC 9460: Service Binding and Parameter Specification via the DNS (SVCB and HTTPS)](https://www.rfc-editor.org/rfc/rfc9460) (IETF, 2023).
+- [RFC 4592: The Role of Wildcards in the Domain Name System](https://www.rfc-editor.org/rfc/rfc4592) (IETF, 2006).
 - [IANA DNS Parameters](https://www.iana.org/assignments/dns-parameters/) (IANA): the registry of all record types.
 - [DNS records](https://www.cloudflare.com/learning/dns/dns-records/) (Cloudflare Learning Center).

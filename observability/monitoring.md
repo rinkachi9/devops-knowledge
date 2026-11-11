@@ -101,9 +101,9 @@ Three well-known methods tell you which metrics to watch first.
 3. **Errors.** The rate of failed requests, explicit (HTTP 5xx) or implicit (wrong content, too slow).
 4. **Saturation.** How full the system is: the most constrained resource (CPU, memory, I/O, queue length), ideally with a prediction of when it runs out.
 
-**USE** (Brendan Gregg) for resources such as CPUs, disks and network interfaces: Utilization, Saturation, Errors.
+**USE** (Brendan Gregg) for resources such as CPUs, disks and network interfaces: Utilization, Saturation, Errors. See [USE method](use-method.md) for the procedure and the Linux checklist.
 
-**RED** (Tom Wilkie) for request-driven services: Rate, Errors, Duration.
+**RED** (Tom Wilkie) for request-driven services: Rate, Errors, Duration. See [RED method](red-method.md) for instrumentation, dashboards and SLIs.
 
 ```mermaid
 mindmap

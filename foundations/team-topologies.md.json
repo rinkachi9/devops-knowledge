@@ -1,0 +1,129 @@
+{
+  "node": {
+    "id": "foundations.team-topologies",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "foundations",
+      "organization",
+      "platform-engineering",
+      "teams"
+    ],
+    "aliases": [
+      "Team Topologies",
+      "platform engineering",
+      "internal developer platform",
+      "IDP",
+      "golden path",
+      "paved road",
+      "Conway's law",
+      "inverse Conway maneuver",
+      "cognitive load",
+      "stream-aligned team",
+      "enabling team",
+      "platform team",
+      "Backstage"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.calms",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.three-ways",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "team-topologies",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+      "url": "https://teamtopologies.com/book",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "tt-key-concepts",
+      "type": "website",
+      "publisher": "Team Topologies",
+      "title": "Team Topologies key concepts",
+      "url": "https://teamtopologies.com/key-concepts",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "conway",
+      "type": "paper",
+      "publisher": "Datamation",
+      "title": "How Do Committees Invent?",
+      "url": "https://www.melconway.com/Home/Committees_Paper.html",
+      "year": 1968,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cncf-platforms",
+      "type": "report",
+      "publisher": "CNCF TAG App Delivery",
+      "title": "CNCF Platforms White Paper",
+      "url": "https://tag-app-delivery.cncf.io/whitepapers/platforms/",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "backstage",
+      "type": "documentation",
+      "publisher": "Backstage project",
+      "title": "Backstage documentation",
+      "url": "https://backstage.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Conway's law",
+      "anchor": "#conways-law-and-the-inverse-conway-maneuver",
+      "definition": "Systems mirror the communication structures of the organizations that design them."
+    },
+    {
+      "term": "Cognitive load",
+      "anchor": "#cognitive-load",
+      "definition": "The working memory a team needs for its work, divided into intrinsic, extraneous and germane load."
+    },
+    {
+      "term": "Stream-aligned team",
+      "anchor": "#the-four-fundamental-team-types",
+      "definition": "A team that owns a flow of change for a business domain end to end."
+    },
+    {
+      "term": "X-as-a-Service",
+      "anchor": "#the-three-interaction-modes",
+      "definition": "An interaction in which one team consumes another's capability through a clear interface."
+    },
+    {
+      "term": "Internal developer platform",
+      "anchor": "#platform-engineering",
+      "definition": "Self-service tools and workflows offered by a platform team as a product."
+    },
+    {
+      "term": "Golden path",
+      "anchor": "#platform-engineering",
+      "definition": "An opinionated, supported way to do a common task on the platform."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

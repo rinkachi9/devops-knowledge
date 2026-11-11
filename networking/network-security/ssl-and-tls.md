@@ -73,7 +73,7 @@ An X.509 certificate binds a public key to identities and is signed by a CA, for
 | Subject Alternative Names (SAN) | All DNS names (and IPs) the certificate is valid for |
 | Public key | The server's key for signatures in the handshake |
 | Issuer | The CA that signed the certificate |
-| Validity period | Not before and not after dates; publicly trusted certificates are limited to 398 days today, with the CA/Browser Forum reducing the maximum stepwise to 47 days by 2029 (checked 2026-11) |
+| Validity period | Not before and not after dates; publicly trusted certificates issued since 15 March 2026 are limited to 200 days, dropping to 100 days in March 2027 and 47 days in March 2029 (CA/Browser Forum ballot SC-081v3, checked 2026-11) |
 | Signature | The issuer's signature over the certificate |
 
 Types of certificates:
@@ -83,7 +83,7 @@ Types of certificates:
 3. **Extended Validation (EV)**: the most extensive identity checks; used by financial institutions, although browsers no longer display EV specially in the address bar.
 4. **Wildcard**: `*.example.com` covers all names one level below the domain (`www.example.com`, `api.example.com`) but not `example.com` itself or `a.b.example.com`.
 5. **Self-signed**: signed by its own key; used internally and in tests, not trusted by browsers. A private (internal) CA is the better choice for internal services.
-6. **Let's Encrypt**: a free CA issuing DV certificates through the ACME protocol, which automates issuance and renewal; ideal for DevOps automation (cert-manager in Kubernetes, Certbot, Caddy).
+6. **Let's Encrypt**: a free CA issuing DV certificates through the ACME protocol, which automates issuance and renewal; ideal for DevOps automation (cert-manager in Kubernetes, Certbot, Caddy). See [Let's Encrypt](lets-encrypt.md) and [ACME](acme.md).
 
 In practice: automate with Let's Encrypt or another ACME CA, use wildcards when many subdomains share one host or proxy (and the private key can be protected), and choose OV or EV only where contracts or policies require identity validation.
 
@@ -91,6 +91,8 @@ In practice: automate with Let's Encrypt or another ACME CA, use wildcards when 
 
 - **Revocation**: CRLs and OCSP let CAs mark certificates as invalid before expiry; OCSP stapling lets servers deliver fresh OCSP responses. Let's Encrypt ended OCSP support in 2025 in favor of CRLs and short lifetimes (checked 2026-11).
 - **Certificate Transparency (CT)**: CAs log every public certificate in append-only logs, so domain owners can detect misissued certificates (search at crt.sh).
+
+How DNS records (CAA, ACME challenge records, TLSA), validation and Certificate Transparency fit together across the certificate lifecycle is explained in [Certificates for domains](domain-certificates.md).
 
 ## Worked example
 

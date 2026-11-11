@@ -1,0 +1,106 @@
+{
+  "node": {
+    "id": "devsecops.threat-modeling",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "devsecops",
+      "security",
+      "design",
+      "threat-modeling"
+    ],
+    "aliases": [
+      "STRIDE",
+      "data flow diagram",
+      "DFD",
+      "trust boundary",
+      "attack tree",
+      "PASTA",
+      "LINDDUN",
+      "Threat Modeling Manifesto"
+    ]
+  },
+  "links": [
+    {
+      "to": "devsecops.devsecops-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "tm-manifesto",
+      "type": "website",
+      "publisher": "Threat Modeling Manifesto",
+      "title": "Threat Modeling Manifesto",
+      "url": "https://www.threatmodelingmanifesto.org/",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "shostack-tm",
+      "type": "book",
+      "publisher": "Wiley",
+      "title": "Threat Modeling: Designing for Security",
+      "url": "https://shostack.org/books/threat-modeling-book",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-tm-cs",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "Threat Modeling Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "schneier-attack-trees",
+      "type": "paper",
+      "publisher": "Dr. Dobb's Journal",
+      "title": "Attack Trees",
+      "url": "https://www.schneier.com/academic/archives/1999/12/attack_trees.html",
+      "year": 1999,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mitre-attack",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "MITRE ATT&CK",
+      "url": "https://attack.mitre.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Threat modeling",
+      "anchor": "#why-model-threats",
+      "definition": "A structured analysis of what can go wrong with a system and what to do about it."
+    },
+    {
+      "term": "STRIDE",
+      "anchor": "#step-2-find-threats-with-stride",
+      "definition": "Six threat categories: spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege."
+    },
+    {
+      "term": "Trust boundary",
+      "anchor": "#step-1-model-the-system-with-a-data-flow-diagram",
+      "definition": "A line in a data flow diagram where the level of trust changes."
+    },
+    {
+      "term": "Attack tree",
+      "anchor": "#other-methods",
+      "definition": "A tree with an attacker goal at the root and alternative ways to reach it as branches."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

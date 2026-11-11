@@ -17,7 +17,6 @@
       "TLS handshake",
       "X.509",
       "certificate authority",
-      "Let's Encrypt",
       "mTLS",
       "forward secrecy"
     ]

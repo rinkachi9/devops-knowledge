@@ -1,0 +1,100 @@
+{
+  "node": {
+    "id": "foundations.three-ways",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "foundations",
+      "principles",
+      "flow",
+      "feedback",
+      "learning"
+    ],
+    "aliases": [
+      "First Way",
+      "Second Way",
+      "Third Way",
+      "flow feedback learning",
+      "Theory of Constraints"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.calms",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kim-three-ways",
+      "type": "website",
+      "publisher": "IT Revolution",
+      "title": "The Three Ways: The Principles Underpinning DevOps",
+      "url": "https://itrevolution.com/articles/the-three-ways-principles-underpinning-devops/",
+      "year": 2012,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "devops-handbook",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "The DevOps Handbook, 2nd edition",
+      "url": "https://itrevolution.com/product/the-devops-handbook-second-edition/",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "phoenix",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "The Phoenix Project",
+      "url": "https://itrevolution.com/product/the-phoenix-project/",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "the-goal",
+      "type": "book",
+      "publisher": "North River Press",
+      "title": "The Goal: A Process of Ongoing Improvement",
+      "url": "https://www.northriverpress.com/the-goal",
+      "year": 1984,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "First Way",
+      "anchor": "#the-first-way-flow",
+      "definition": "Fast flow of work from development to operations to the customer, optimized for the whole system."
+    },
+    {
+      "term": "Second Way",
+      "anchor": "#the-second-way-feedback",
+      "definition": "Fast, constant feedback from right to left so problems are fixed at the source."
+    },
+    {
+      "term": "Third Way",
+      "anchor": "#the-third-way-continual-learning-and-experimentation",
+      "definition": "A culture of experimentation and learning from both success and failure."
+    },
+    {
+      "term": "Constraint",
+      "anchor": "#the-first-way-flow",
+      "definition": "The slowest stage of a value stream, which limits the throughput of the whole system."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

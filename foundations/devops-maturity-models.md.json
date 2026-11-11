@@ -1,0 +1,101 @@
+{
+  "node": {
+    "id": "foundations.devops-maturity-models",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 8,
+    "tags": [
+      "foundations",
+      "maturity",
+      "assessment"
+    ],
+    "aliases": [
+      "maturity model",
+      "CMMI",
+      "capability model",
+      "DSOMM",
+      "SAMM",
+      "BSIMM",
+      "platform engineering maturity model"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.calms",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.dora-metrics",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "foundations.value-stream-mapping",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "accelerate",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "Accelerate: The Science of Lean Software and DevOps",
+      "url": "https://itrevolution.com/product/accelerate/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cmmi",
+      "type": "website",
+      "publisher": "CMMI Institute",
+      "title": "CMMI",
+      "url": "https://cmmiinstitute.com/cmmi",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dsomm",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP DevSecOps Maturity Model",
+      "url": "https://dsomm.owasp.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "samm",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP SAMM",
+      "url": "https://owaspsamm.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cncf-pemm",
+      "type": "report",
+      "publisher": "CNCF TAG App Delivery",
+      "title": "Platform Engineering Maturity Model",
+      "url": "https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Maturity model",
+      "anchor": "#what-a-maturity-model-is",
+      "definition": "A model describing practice evolution as ordered levels with criteria per dimension."
+    },
+    {
+      "term": "Capability model",
+      "anchor": "#the-critique-maturity-models-versus-capability-models",
+      "definition": "An improvement model that measures outcomes and improves the limiting capability continuously."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}

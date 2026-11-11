@@ -1,0 +1,127 @@
+{
+  "node": {
+    "id": "networking.network-security.lets-encrypt",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "network-security",
+      "tls",
+      "certificates",
+      "certificate-authority"
+    ],
+    "aliases": [
+      "LE",
+      "ISRG",
+      "Internet Security Research Group",
+      "Certbot",
+      "ISRG Root X1"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.acme",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.network-security.ssl-and-tls",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "le-docs",
+      "type": "documentation",
+      "publisher": "Let's Encrypt",
+      "title": "Let's Encrypt documentation",
+      "url": "https://letsencrypt.org/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-chains",
+      "type": "documentation",
+      "publisher": "Let's Encrypt",
+      "title": "Chains of Trust",
+      "url": "https://letsencrypt.org/certificates/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-rate",
+      "type": "documentation",
+      "publisher": "Let's Encrypt",
+      "title": "Rate Limits",
+      "url": "https://letsencrypt.org/docs/rate-limits/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-lifetimes",
+      "type": "documentation",
+      "publisher": "Let's Encrypt",
+      "title": "Certificate Lifetime Rationale and Plans",
+      "url": "https://letsencrypt.org/docs/cert-lifetimes/",
+      "year": 2026,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-ocsp",
+      "type": "website",
+      "publisher": "Let's Encrypt",
+      "title": "Ending OCSP Support in 2025",
+      "url": "https://letsencrypt.org/2024/12/05/ending-ocsp/",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cab-sc081",
+      "type": "standard",
+      "publisher": "CA/Browser Forum",
+      "title": "Ballot SC-081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods",
+      "url": "https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/",
+      "year": 2025,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "le-ccs",
+      "type": "paper",
+      "publisher": "ACM CCS",
+      "title": "Let's Encrypt: An Automated Certificate Authority to Encrypt the Entire Web",
+      "url": "https://dl.acm.org/doi/10.1145/3319535.3363192",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Let's Encrypt",
+      "anchor": "#what-it-is-and-why-it-exists",
+      "definition": "A free, automated certificate authority run by ISRG that issues DV certificates through ACME."
+    },
+    {
+      "term": "Chain of trust",
+      "anchor": "#chains-of-trust",
+      "definition": "The sequence of certificates from a leaf through intermediates to a trusted root."
+    },
+    {
+      "term": "Certificate profile",
+      "anchor": "#certificate-profiles-and-lifetimes",
+      "definition": "A named set of certificate properties, such as lifetime, that an ACME client can select."
+    },
+    {
+      "term": "Rate limit",
+      "anchor": "#rate-limits",
+      "definition": "A cap on orders or certificates per account, registered domain or identifier set."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

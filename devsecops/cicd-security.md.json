@@ -1,0 +1,111 @@
+{
+  "node": {
+    "id": "devsecops.cicd-security",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 8,
+    "tags": [
+      "devsecops",
+      "security",
+      "ci-cd",
+      "pipelines"
+    ],
+    "aliases": [
+      "pipeline security",
+      "OWASP Top 10 CI/CD Security Risks",
+      "poisoned pipeline execution",
+      "PPE",
+      "pull_request_target",
+      "OIDC federation",
+      "runner hardening"
+    ]
+  },
+  "links": [
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.secrets-management",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.threat-modeling",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "devsecops.software-supply-chain-security",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "owasp-cicd-top10",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "OWASP Top 10 CI/CD Security Risks",
+      "url": "https://owasp.org/www-project-top-10-ci-cd-security-risks/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gh-hardening",
+      "type": "documentation",
+      "publisher": "GitHub",
+      "title": "Security hardening for GitHub Actions",
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gh-pwn-requests",
+      "type": "website",
+      "publisher": "GitHub Security Lab",
+      "title": "Keeping your GitHub Actions and workflows secure: Preventing pwn requests",
+      "url": "https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gh-oidc",
+      "type": "documentation",
+      "publisher": "GitHub",
+      "title": "About security hardening with OpenID Connect",
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/about-security-hardening-with-openid-connect",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cve-2025-30066",
+      "type": "website",
+      "publisher": "NVD",
+      "title": "CVE-2025-30066",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30066",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Poisoned pipeline execution",
+      "anchor": "#poisoned-pipeline-execution-and-untrusted-code",
+      "definition": "Execution of attacker-controlled content, such as a modified pipeline file, by the CI system."
+    },
+    {
+      "term": "OIDC federation",
+      "anchor": "#identity-oidc-instead-of-stored-credentials",
+      "definition": "Exchanging a CI job's signed identity token for short-lived cloud credentials."
+    },
+    {
+      "term": "Ephemeral runner",
+      "anchor": "#runners",
+      "definition": "A CI runner that executes one job and is then destroyed."
+    }
+  ],
+  "map": {
+    "group": "devsecops"
+  }
+}

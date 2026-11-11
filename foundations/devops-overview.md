@@ -17,6 +17,25 @@ Before DevOps, development and operations were separate teams with opposing ince
 
 *Analogy.* A traditional release is like a ferry that leaves twice a year: everything must be on board, the crossing is risky and missing it means waiting six months. DevOps replaces the ferry with a conveyor belt: each item travels alone, a broken item is easy to spot and remove, and nobody has to wait. The analogy breaks at the team level: a conveyor belt needs no collaboration, while DevOps depends on people sharing goals and information.
 
+### A short history
+
+```mermaid
+timeline
+  title Milestones of DevOps
+  2007 : Patrick Debois frustrated by the Dev and Ops divide in a data center migration
+  2008 : Agile Infrastructure discussions (Andrew Shafer, Patrick Debois)
+  2009 : 10+ Deploys per Day talk by John Allspaw and Paul Hammond (Flickr) : First DevOpsDays in Ghent
+  2010 : Continuous Delivery book (Humble, Farley) : CAMS coined (Willis, Edwards)
+  2013 : The Phoenix Project
+  2014 : First State of DevOps report with DORA research methods
+  2016 : The DevOps Handbook : Google SRE book
+  2018 : Accelerate : DORA joins Google Cloud
+  2019 : Team Topologies
+  2024 : Five DORA metrics
+```
+
+The timeline shows how the movement grew from practitioner frustration and conference talks into a research-backed discipline. The name comes from DevOpsDays, the conference Patrick Debois organized in Ghent in October 2009.
+
 ### Benefits
 
 - **Faster time to market.** Changes reach users in hours or days instead of months.
@@ -35,7 +54,7 @@ Before DevOps, development and operations were separate teams with opposing ince
 5. **Monitoring and logging.** Tracking application and infrastructure performance to identify and resolve issues quickly. See [Monitoring](../observability/monitoring.md).
 6. **Collaboration and communication.** Encouraging cross-functional teams to work together with shared tools and visible work.
 
-The most quoted summary of these components is *CALMS*: Culture, Automation, Lean (small batches, limiting work in progress), Measurement and Sharing. It was coined by John Willis and Damon Edwards and extended with "Lean" by Jez Humble.
+The most quoted summary of these components is *CALMS*: Culture, Automation, Lean (small batches, limiting work in progress), Measurement and Sharing. It was coined by John Willis and Damon Edwards and extended with "Lean" by Jez Humble. See [CALMS](calms.md) for each pillar in depth and how to use it as an assessment lens.
 
 ### The DevOps lifecycle
 
@@ -67,6 +86,8 @@ Gene Kim, Jez Humble, Patrick Debois and John Willis describe the principles und
 1. **Flow.** Make work move fast from development to operations to the customer: small batches, visible work, fewer hand-offs, automated pipelines.
 2. **Feedback.** Make problems visible as early as possible: automated tests, telemetry, alerts, peer review.
 3. **Continual learning and experimentation.** Treat failures as learning opportunities, run blameless postmortems and reserve time for improvement.
+
+The principles, their sources and the practices derived from each are explained in [The Three Ways](three-ways.md); the cultural side of the Third Way is in [Blameless culture and psychological safety](blameless-culture.md).
 
 ### Core practices
 
@@ -118,7 +139,7 @@ mindmap
 
 ### Measuring DevOps: the DORA metrics
 
-The DevOps Research and Assessment (DORA) program, started by Nicole Forsgren, Jez Humble and Gene Kim and now part of Google Cloud, measures software delivery performance with a small set of metrics. Two measure throughput and two measure stability:
+The DevOps Research and Assessment (DORA) program, started by Nicole Forsgren, Jez Humble and Gene Kim and now part of Google Cloud, measures software delivery performance with a small set of metrics. For years these were the "four key metrics" below; in 2024 DORA added a fifth, deployment rework rate, and regrouped them into throughput and instability ([DORA metrics and capabilities](dora-metrics.md)). The four classic metrics:
 
 | Metric | Measures | Question it answers |
 | --- | --- | --- |
@@ -129,7 +150,7 @@ The DevOps Research and Assessment (DORA) program, started by Nicole Forsgren, J
 
 The central finding of the research, published in *Accelerate* (2018), is that throughput and stability are not a trade off: the best performing teams are better on all four metrics at the same time.
 
-TODO: Check the current DORA metric set on dora.dev; the 2024 and later reports discuss additional measures such as rework rate.
+The fifth metric, deployment rework rate, is the share of deployments that are unplanned fixes for production incidents (checked against dora.dev, 2026-11).
 
 ## Worked example
 
@@ -166,11 +187,11 @@ xychart-beta
 - **Benefits.** Higher delivery speed and stability at the same time, less manual work, better morale through shared ownership.
 - **Costs.** An upfront investment in test automation, pipelines and observability; a cultural change that needs management support; on-call duty for developers.
 - **Where it fits less well.** Systems that are released rarely by contract (embedded firmware, regulated medical devices) can still use the practices (CI, IaC, automated tests) but cannot deploy continuously. Very small teams may not need a separate platform function.
-- **Alternatives and relatives.** Site reliability engineering (SRE) is an implementation of DevOps principles with an engineering focus on reliability (see [Site reliability engineering](../site-reliability-engineering/README.md)). Platform engineering builds internal platforms so that product teams can practice DevOps without each building their own tool chain.
+- **Alternatives and relatives.** Site reliability engineering (SRE) is an implementation of DevOps principles with an engineering focus on reliability (see [Site reliability engineering](../site-reliability-engineering/README.md)). Platform engineering builds internal platforms so that product teams can practice DevOps without each building their own tool chain ([Team Topologies and platform engineering](team-topologies.md)). DevSecOps builds security into the same flow ([DevSecOps overview](../devsecops/devsecops-overview.md)).
 
 ## Common mistakes
 
-- **Treating DevOps as a team or a job title.** A "DevOps team" that sits between Dev and Ops creates a third silo. Fix: make product teams own their services and let a platform team provide self-service tools.
+- **Treating DevOps as a team or a job title.** A "DevOps team" that sits between Dev and Ops creates a third silo. Fix: make product teams own their services and let a platform team provide self-service tools ([Team Topologies](team-topologies.md)).
 - **Buying tools instead of changing practices.** A CI server with a manual, monthly release process is not DevOps. Fix: measure the DORA metrics and improve the bottleneck they reveal.
 - **Automating a broken process.** Automating a ten-step manual release with four approvals makes it faster but not better. Fix: simplify first (smaller batches, fewer hand-offs), then automate.
 - **Ignoring the Ops half.** Fast delivery without monitoring and incident practice only ships failures faster. Fix: build observability and on-call into the definition of done.
