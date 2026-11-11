@@ -1,0 +1,52 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.instana",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "observability",
+      "apm",
+      "instana",
+      "kubernetes",
+      "tool"
+    ],
+    "aliases": [
+      "IBM Instana Observability",
+      "dynamic graph"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring-tools.application-monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "instana-docs",
+      "type": "documentation",
+      "publisher": "IBM",
+      "title": "IBM Instana Observability documentation",
+      "url": "https://www.ibm.com/docs/en/instana-observability",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Dynamic graph",
+      "anchor": "#how-it-works",
+      "definition": "Instana's model of all monitored entities and their dependencies, used for root cause analysis."
+    },
+    {
+      "term": "Application perspective",
+      "anchor": "#core-vocabulary",
+      "definition": "A custom view of a subset of services in Instana."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

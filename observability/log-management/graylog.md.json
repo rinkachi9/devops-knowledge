@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "observability.log-management.graylog",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "observability",
+      "logs",
+      "graylog",
+      "tool"
+    ],
+    "aliases": [
+      "Graylog Open",
+      "GELF"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.log-management.log-management-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "observability.log-management.elastic-stack",
+      "rel": "contrasts"
+    }
+  ],
+  "sources": [
+    {
+      "key": "graylog-docs",
+      "type": "documentation",
+      "publisher": "Graylog",
+      "title": "Graylog documentation",
+      "url": "https://go2docs.graylog.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Stream",
+      "anchor": "#core-vocabulary",
+      "definition": "A Graylog routing rule that groups messages into logical sets in real time."
+    },
+    {
+      "term": "GELF",
+      "anchor": "#core-vocabulary",
+      "definition": "Graylog Extended Log Format, a JSON log format without syslog's length limits."
+    },
+    {
+      "term": "Index set",
+      "anchor": "#core-vocabulary",
+      "definition": "A Graylog storage configuration with its own rotation and retention."
+    }
+  ],
+  "map": {
+    "group": "log-management"
+  }
+}

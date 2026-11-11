@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.internet-layer",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "networking",
+      "internet-layer"
+    ]
+  },
+  "map": {
+    "group": "internet-layer"
+  }
+}

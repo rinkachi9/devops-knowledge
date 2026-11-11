@@ -1,0 +1,79 @@
+{
+  "node": {
+    "id": "cloud-computing.serverless",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "cloud-computing",
+      "serverless",
+      "faas",
+      "lambda"
+    ],
+    "aliases": [
+      "FaaS",
+      "Function as a Service",
+      "AWS Lambda",
+      "cold start",
+      "BaaS"
+    ]
+  },
+  "links": [
+    {
+      "to": "cloud-computing.paas",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-145",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-145: The NIST Definition of Cloud Computing",
+      "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "lambda-guide",
+      "type": "documentation",
+      "publisher": "Amazon Web Services",
+      "title": "AWS Lambda Developer Guide",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "berkeley-serverless",
+      "type": "paper",
+      "publisher": "UC Berkeley",
+      "title": "Cloud Programming Simplified: A Berkeley View on Serverless Computing",
+      "url": "https://arxiv.org/abs/1902.03383",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Serverless",
+      "anchor": "#definition-and-key-characteristics",
+      "definition": "A model in which the provider runs, scales and bills servers per use, with no server management by the customer."
+    },
+    {
+      "term": "Cold start",
+      "anchor": "#how-faas-executes-a-function",
+      "definition": "The extra latency of an invocation that needs a new execution environment."
+    },
+    {
+      "term": "Function as a Service",
+      "anchor": "#key-components",
+      "definition": "A compute model that runs small functions in response to events."
+    }
+  ],
+  "map": {
+    "group": "cloud-computing"
+  }
+}

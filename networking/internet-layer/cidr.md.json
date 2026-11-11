@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "networking.internet-layer.cidr",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "cidr",
+      "subnetting"
+    ],
+    "aliases": [
+      "Classless Inter-Domain Routing",
+      "subnetting",
+      "VLSM",
+      "supernetting",
+      "route aggregation",
+      "prefix length"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.ip-addressing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc4632",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4632: Classless Inter-domain Routing (CIDR)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4632",
+      "year": 2006,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc3021",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 3021: Using 31-Bit Prefixes on IPv4 Point-to-Point Links",
+      "url": "https://www.rfc-editor.org/rfc/rfc3021",
+      "year": 2000,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "CIDR",
+      "anchor": "#notation-and-masks",
+      "definition": "Describing networks as an address plus a prefix length instead of fixed classes."
+    },
+    {
+      "term": "VLSM",
+      "anchor": "#vlsm",
+      "definition": "Using different subnet sizes within one network."
+    },
+    {
+      "term": "Route aggregation",
+      "anchor": "#route-aggregation-supernetting",
+      "definition": "Summarizing contiguous networks as one shorter-prefix route."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

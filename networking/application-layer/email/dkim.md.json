@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "networking.application-layer.email.dkim",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "networking",
+      "email",
+      "dkim",
+      "security"
+    ],
+    "aliases": [
+      "DomainKeys Identified Mail",
+      "DKIM-Signature",
+      "selector",
+      "_domainkey"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.email.spf",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc6376",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 6376: DomainKeys Identified Mail (DKIM) Signatures",
+      "url": "https://www.rfc-editor.org/rfc/rfc6376",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8301",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8301: Cryptographic Algorithm and Key Usage Update to DKIM",
+      "url": "https://www.rfc-editor.org/rfc/rfc8301",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8463",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8463: Ed25519 for DKIM",
+      "url": "https://www.rfc-editor.org/rfc/rfc8463",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DKIM",
+      "anchor": "#definition-and-importance",
+      "definition": "A cryptographic signature on email that proves the signing domain and the integrity of signed content."
+    },
+    {
+      "term": "Selector",
+      "anchor": "#how-it-works",
+      "definition": "A label in the DKIM signature that locates the public key at selector._domainkey.domain."
+    }
+  ],
+  "map": {
+    "group": "email"
+  }
+}

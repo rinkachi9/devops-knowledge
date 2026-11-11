@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "containers-and-virtualization",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "containers-and-virtualization"
+    ]
+  },
+  "map": {
+    "group": "containers-and-virtualization"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "ci-cd.gitops",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "ci-cd",
+      "gitops",
+      "kubernetes",
+      "argo-cd",
+      "flux"
+    ],
+    "aliases": [
+      "pull-based deployment",
+      "Argo CD",
+      "Flux"
+    ]
+  },
+  "links": [
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "contrasts",
+      "note": "Push pipelines compared with pull-based reconciliation"
+    }
+  ],
+  "sources": [
+    {
+      "key": "opengitops",
+      "type": "standard",
+      "publisher": "OpenGitOps, CNCF",
+      "title": "OpenGitOps principles v1.0.0",
+      "url": "https://opengitops.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "argocd-docs",
+      "type": "documentation",
+      "publisher": "Argo Project",
+      "title": "Argo CD documentation",
+      "url": "https://argo-cd.readthedocs.io/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "flux-docs",
+      "type": "documentation",
+      "publisher": "Flux project",
+      "title": "Flux documentation",
+      "url": "https://fluxcd.io/flux/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "GitOps",
+      "anchor": "#summary",
+      "definition": "Continuous deployment in which Git holds the declarative desired state and an agent pulls and reconciles it continuously."
+    },
+    {
+      "term": "Reconciliation loop",
+      "anchor": "#reconciliation-loop",
+      "definition": "A control loop that compares desired and live state and applies the difference."
+    },
+    {
+      "term": "Self-heal",
+      "anchor": "#worked-example",
+      "definition": "Automatic reverting of live changes that differ from the state in Git."
+    }
+  ],
+  "map": {
+    "group": "ci-cd"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.process-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "process-management"
+    ]
+  },
+  "map": {
+    "group": "process-management"
+  }
+}

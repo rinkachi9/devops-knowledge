@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.shell-and-terminal",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "operating-systems",
+      "shell-and-terminal"
+    ]
+  },
+  "map": {
+    "group": "shell-and-terminal"
+  }
+}

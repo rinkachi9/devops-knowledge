@@ -1,0 +1,84 @@
+{
+  "node": {
+    "id": "ci-cd.jenkins",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "ci-cd",
+      "jenkins",
+      "pipeline",
+      "tool"
+    ],
+    "aliases": [
+      "Jenkinsfile",
+      "Jenkins pipeline",
+      "Hudson"
+    ]
+  },
+  "links": [
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "ci-cd.ci-cd-overview",
+      "rel": "applies"
+    }
+  ],
+  "sources": [
+    {
+      "key": "jenkins-docs",
+      "type": "documentation",
+      "publisher": "Jenkins project",
+      "title": "Jenkins User Documentation",
+      "url": "https://www.jenkins.io/doc/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "jenkins-pipeline-syntax",
+      "type": "documentation",
+      "publisher": "Jenkins project",
+      "title": "Pipeline syntax",
+      "url": "https://www.jenkins.io/doc/book/pipeline/syntax/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "jenkins-security",
+      "type": "documentation",
+      "publisher": "Jenkins project",
+      "title": "Securing Jenkins",
+      "url": "https://www.jenkins.io/doc/book/security/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Controller",
+      "anchor": "#architecture",
+      "definition": "The Jenkins server that schedules builds, holds configuration and serves the UI; called master before 2020."
+    },
+    {
+      "term": "Agent",
+      "anchor": "#architecture",
+      "definition": "A machine or container that executes builds for the controller."
+    },
+    {
+      "term": "Jenkinsfile",
+      "anchor": "#pipelines-and-the-jenkinsfile",
+      "definition": "A text file in the repository that defines a Jenkins pipeline as code."
+    },
+    {
+      "term": "Declarative pipeline",
+      "anchor": "#pipelines-and-the-jenkinsfile",
+      "definition": "The structured, validated Jenkinsfile syntax built from pipeline, agent, stages and steps blocks."
+    }
+  ],
+  "map": {
+    "group": "ci-cd"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "node": {
+    "id": "networking.internet-layer.nat",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "nat",
+      "ipv4"
+    ],
+    "aliases": [
+      "Network Address Translation",
+      "PAT",
+      "NAT overload",
+      "masquerade",
+      "port forwarding",
+      "CGNAT",
+      "NAT64",
+      "STUN",
+      "TURN"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.ip-addressing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc3022",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 3022: Traditional IP Network Address Translator",
+      "url": "https://www.rfc-editor.org/rfc/rfc3022",
+      "year": 2001,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc4787",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4787: NAT Behavioral Requirements for Unicast UDP",
+      "url": "https://www.rfc-editor.org/rfc/rfc4787",
+      "year": 2007,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8489",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8489: Session Traversal Utilities for NAT",
+      "url": "https://www.rfc-editor.org/rfc/rfc8489",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc6146",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 6146: Stateful NAT64",
+      "url": "https://www.rfc-editor.org/rfc/rfc6146",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "NAT",
+      "anchor": "#definition-and-usage",
+      "definition": "Rewriting addresses in packet headers as packets cross a router."
+    },
+    {
+      "term": "PAT",
+      "anchor": "#types",
+      "definition": "Many hosts sharing one public address, distinguished by translated ports."
+    },
+    {
+      "term": "NAT traversal",
+      "anchor": "#traversal-problems-and-solutions",
+      "definition": "Techniques such as STUN, TURN and NAT-T that let protocols work through NAT."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

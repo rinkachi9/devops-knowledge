@@ -1,0 +1,87 @@
+{
+  "node": {
+    "id": "operating-systems.operating-system-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "kernel",
+      "linux"
+    ],
+    "aliases": [
+      "OS",
+      "kernel",
+      "types of operating systems",
+      "RTOS",
+      "time-sharing"
+    ]
+  },
+  "sources": [
+    {
+      "key": "silberschatz",
+      "type": "book",
+      "publisher": "Wiley",
+      "title": "Operating System Concepts, 10th edition",
+      "url": "https://www.os-book.com/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "tanenbaum-mos",
+      "type": "book",
+      "publisher": "Pearson",
+      "title": "Modern Operating Systems, 5th edition",
+      "url": "https://www.pearson.com/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ostep",
+      "type": "book",
+      "publisher": "Arpaci-Dusseau",
+      "title": "Operating Systems: Three Easy Pieces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "kernel-docs",
+      "type": "documentation",
+      "publisher": "kernel.org",
+      "title": "The Linux Kernel documentation",
+      "url": "https://docs.kernel.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Operating system",
+      "anchor": "#definition-and-function",
+      "definition": "System software that manages hardware resources and provides an environment for programs, acting as an interface between user and hardware."
+    },
+    {
+      "term": "Kernel",
+      "anchor": "#definition-and-function",
+      "definition": "The core of the OS that runs in privileged mode and provides services through system calls."
+    },
+    {
+      "term": "Multiprogramming",
+      "anchor": "#multiprogramming-operating-system",
+      "definition": "Keeping several programs in memory so the CPU runs another while one waits for I/O."
+    },
+    {
+      "term": "Real-time operating system",
+      "anchor": "#real-time-operating-system",
+      "definition": "An OS that guarantees tasks complete within deadlines."
+    }
+  ],
+  "map": {
+    "group": "operating-systems"
+  }
+}

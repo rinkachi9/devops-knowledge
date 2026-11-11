@@ -1,0 +1,88 @@
+{
+  "node": {
+    "id": "infrastructure-as-code.configuration-management",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "infrastructure-as-code",
+      "configuration-management",
+      "ansible",
+      "puppet",
+      "chef"
+    ],
+    "aliases": [
+      "CM",
+      "SCM",
+      "Ansible",
+      "Puppet",
+      "Chef",
+      "SaltStack"
+    ]
+  },
+  "links": [
+    {
+      "to": "infrastructure-as-code.infrastructure-as-code-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ansible-docs",
+      "type": "documentation",
+      "publisher": "Red Hat",
+      "title": "Ansible documentation",
+      "url": "https://docs.ansible.com/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "puppet-docs",
+      "type": "documentation",
+      "publisher": "Perforce Puppet",
+      "title": "Puppet documentation",
+      "url": "https://www.puppet.com/docs",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "chef-docs",
+      "type": "documentation",
+      "publisher": "Progress Chef",
+      "title": "Chef documentation",
+      "url": "https://docs.chef.io/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "salt-docs",
+      "type": "documentation",
+      "publisher": "Salt Project",
+      "title": "Salt documentation",
+      "url": "https://docs.saltproject.io/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Configuration management",
+      "anchor": "#summary",
+      "definition": "A process that keeps the configuration of systems consistent, tracked and controlled throughout their lifecycle."
+    },
+    {
+      "term": "Configuration item",
+      "anchor": "#core-aspects",
+      "definition": "A component whose configuration is tracked, versioned and controlled."
+    },
+    {
+      "term": "Convergence",
+      "anchor": "#core-aspects",
+      "definition": "Repeatedly bringing a node to its desired configuration by changing only what differs."
+    }
+  ],
+  "map": {
+    "group": "infrastructure-as-code"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "operating-systems.shell-and-terminal.terminal",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "terminal",
+      "cli",
+      "linux"
+    ],
+    "aliases": [
+      "command line",
+      "CLI",
+      "tmux",
+      "GNU Screen",
+      "terminal multiplexer",
+      "grep",
+      "sed",
+      "awk"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "coreutils",
+      "type": "documentation",
+      "publisher": "GNU Project",
+      "title": "GNU Coreutils manual",
+      "url": "https://www.gnu.org/software/coreutils/manual/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gawk",
+      "type": "documentation",
+      "publisher": "GNU Project",
+      "title": "The GNU Awk User's Guide",
+      "url": "https://www.gnu.org/software/gawk/manual/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "tlcl",
+      "type": "book",
+      "publisher": "No Starch Press",
+      "title": "The Linux Command Line, 2nd edition",
+      "url": "https://linuxcommand.org/tlcl.php",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Terminal multiplexer",
+      "anchor": "#terminal-multiplexers",
+      "definition": "A program that runs several terminal sessions in one window and keeps them alive after disconnecting."
+    },
+    {
+      "term": "Pipeline",
+      "anchor": "#worked-example",
+      "definition": "A chain of commands connected with pipes so each one's output becomes the next one's input."
+    }
+  ],
+  "map": {
+    "group": "shell-and-terminal"
+  }
+}

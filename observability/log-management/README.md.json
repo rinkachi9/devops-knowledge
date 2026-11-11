@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "observability.log-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "observability",
+      "log-management"
+    ]
+  },
+  "map": {
+    "group": "log-management"
+  }
+}

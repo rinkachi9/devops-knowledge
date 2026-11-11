@@ -1,0 +1,90 @@
+{
+  "node": {
+    "id": "infrastructure-as-code.infrastructure-as-code-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "infrastructure-as-code",
+      "iac",
+      "terraform",
+      "provisioning"
+    ],
+    "aliases": [
+      "IaC",
+      "declarative infrastructure",
+      "immutable infrastructure"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "morris-iac",
+      "type": "book",
+      "publisher": "O'Reilly",
+      "title": "Infrastructure as Code, 2nd edition",
+      "url": "https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "terraform-docs",
+      "type": "documentation",
+      "publisher": "HashiCorp",
+      "title": "Terraform documentation",
+      "url": "https://developer.hashicorp.com/terraform/docs",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "opentofu-docs",
+      "type": "documentation",
+      "publisher": "Linux Foundation",
+      "title": "OpenTofu documentation",
+      "url": "https://opentofu.org/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cfn-guide",
+      "type": "documentation",
+      "publisher": "Amazon Web Services",
+      "title": "AWS CloudFormation User Guide",
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Infrastructure as code",
+      "anchor": "#summary",
+      "definition": "Managing and provisioning infrastructure through machine-readable definition files kept in version control."
+    },
+    {
+      "term": "Idempotency",
+      "anchor": "#key-concepts",
+      "definition": "Applying the same definition many times gives the same result as applying it once."
+    },
+    {
+      "term": "Configuration drift",
+      "anchor": "#key-concepts",
+      "definition": "The difference between the declared state and the real state of infrastructure."
+    },
+    {
+      "term": "Declarative approach",
+      "anchor": "#key-concepts",
+      "definition": "Defining what the end state should be and letting the tool compute the steps."
+    }
+  ],
+  "map": {
+    "group": "infrastructure-as-code"
+  }
+}

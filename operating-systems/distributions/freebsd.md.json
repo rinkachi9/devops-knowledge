@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "operating-systems.distributions.freebsd",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "operating-systems",
+      "distributions",
+      "freebsd",
+      "bsd",
+      "zfs"
+    ],
+    "aliases": [
+      "BSD",
+      "jails",
+      "pkg",
+      "Ports Collection"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.posix",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "freebsd-handbook",
+      "type": "documentation",
+      "publisher": "FreeBSD Project",
+      "title": "FreeBSD Handbook",
+      "url": "https://docs.freebsd.org/en/books/handbook/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mckusick-freebsd",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "The Design and Implementation of the FreeBSD Operating System, 2nd edition",
+      "url": "https://www.pearson.com/",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Base system",
+      "anchor": "#target-users-and-license",
+      "definition": "FreeBSD's kernel, libraries and utilities developed and updated as one unit."
+    },
+    {
+      "term": "Jail",
+      "anchor": "#why-use-it",
+      "definition": "FreeBSD's OS-level virtualization mechanism."
+    }
+  ],
+  "map": {
+    "group": "distributions"
+  }
+}

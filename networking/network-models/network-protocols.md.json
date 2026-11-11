@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "networking.network-models.network-protocols",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "networking",
+      "models",
+      "protocols",
+      "rfc"
+    ],
+    "aliases": [
+      "protocol",
+      "RFC",
+      "IETF"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-models.tcp-ip-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc-editor",
+      "type": "website",
+      "publisher": "IETF",
+      "title": "RFC Editor",
+      "url": "https://www.rfc-editor.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc2026",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2026: The Internet Standards Process",
+      "url": "https://www.rfc-editor.org/rfc/rfc2026",
+      "year": 1996,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Network protocol",
+      "anchor": "#definition",
+      "definition": "A standardized set of rules for message syntax, semantics and timing between devices."
+    }
+  ],
+  "map": {
+    "group": "network-models"
+  }
+}

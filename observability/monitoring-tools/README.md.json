@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "observability",
+      "monitoring-tools"
+    ]
+  },
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

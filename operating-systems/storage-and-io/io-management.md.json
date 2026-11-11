@@ -1,0 +1,70 @@
+{
+  "node": {
+    "id": "operating-systems.storage-and-io.io-management",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "operating-systems",
+      "io",
+      "devices",
+      "storage"
+    ],
+    "aliases": [
+      "device management",
+      "I/O scheduler",
+      "block device",
+      "character device",
+      "spooling",
+      "DMA"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "silberschatz",
+      "type": "book",
+      "publisher": "Wiley",
+      "title": "Operating System Concepts, 10th edition",
+      "url": "https://www.os-book.com/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "kernel-block",
+      "type": "documentation",
+      "publisher": "Linux kernel documentation",
+      "title": "Block",
+      "url": "https://docs.kernel.org/block/index.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Block device",
+      "anchor": "#device-categories",
+      "definition": "A device that stores addressable fixed-size blocks, such as a disk."
+    },
+    {
+      "term": "Spooling",
+      "anchor": "#allocation-types",
+      "definition": "Buffering jobs on disk to share a dedicated device such as a printer."
+    },
+    {
+      "term": "I/O scheduler",
+      "anchor": "#io-operations-and-the-kernel-io-stack",
+      "definition": "The component that orders and merges I/O requests to a device."
+    }
+  ],
+  "map": {
+    "group": "storage-and-io"
+  }
+}

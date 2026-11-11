@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "infrastructure-as-code",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "infrastructure-as-code"
+    ]
+  },
+  "map": {
+    "group": "infrastructure-as-code"
+  }
+}

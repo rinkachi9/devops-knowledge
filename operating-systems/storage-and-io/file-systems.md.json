@@ -1,0 +1,90 @@
+{
+  "node": {
+    "id": "operating-systems.storage-and-io.file-systems",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "file-systems",
+      "storage",
+      "linux"
+    ],
+    "aliases": [
+      "filesystem",
+      "VFS",
+      "ext4",
+      "XFS",
+      "Btrfs",
+      "inode",
+      "journaling",
+      "FHS"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "vfs",
+      "type": "documentation",
+      "publisher": "Linux kernel documentation",
+      "title": "Overview of the Linux Virtual File System",
+      "url": "https://docs.kernel.org/filesystems/vfs.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ext4",
+      "type": "documentation",
+      "publisher": "Linux kernel documentation",
+      "title": "ext4 Data Structures and Algorithms",
+      "url": "https://docs.kernel.org/filesystems/ext4/index.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "btrfs",
+      "type": "documentation",
+      "publisher": "Btrfs project",
+      "title": "Btrfs documentation",
+      "url": "https://btrfs.readthedocs.io/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "fhs-3",
+      "type": "standard",
+      "publisher": "Linux Foundation",
+      "title": "Filesystem Hierarchy Standard 3.0",
+      "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Virtual file system",
+      "anchor": "#three-layers",
+      "definition": "A kernel layer that gives all concrete file systems one common interface."
+    },
+    {
+      "term": "Inode",
+      "anchor": "#inodes-and-directories",
+      "definition": "The structure holding a file's metadata and pointers to its data blocks."
+    },
+    {
+      "term": "Journaling",
+      "anchor": "#journaling",
+      "definition": "Logging intended changes before applying them so that a file system recovers quickly after a crash."
+    }
+  ],
+  "map": {
+    "group": "storage-and-io"
+  }
+}

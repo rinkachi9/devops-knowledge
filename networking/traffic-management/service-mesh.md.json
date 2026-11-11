@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "networking.traffic-management.service-mesh",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 11,
+    "tags": [
+      "networking",
+      "service-mesh",
+      "istio",
+      "mtls",
+      "microservices"
+    ],
+    "aliases": [
+      "Istio",
+      "Linkerd",
+      "sidecar proxy",
+      "Envoy",
+      "ambient mesh"
+    ]
+  },
+  "sources": [
+    {
+      "key": "istio-docs",
+      "type": "documentation",
+      "publisher": "Istio project",
+      "title": "Istio documentation",
+      "url": "https://istio.io/latest/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "linkerd-docs",
+      "type": "documentation",
+      "publisher": "Linkerd project",
+      "title": "Linkerd documentation",
+      "url": "https://linkerd.io/2/overview/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-204a",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-204A: Building Secure Microservices-based Applications Using Service-Mesh Architecture",
+      "url": "https://csrc.nist.gov/pubs/sp/800/204/a/final",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Service mesh",
+      "anchor": "#definition-and-components",
+      "definition": "An infrastructure layer of proxies and a control plane that manages service-to-service communication."
+    },
+    {
+      "term": "Sidecar proxy",
+      "anchor": "#definition-and-components",
+      "definition": "A proxy deployed next to each service instance that intercepts its traffic."
+    },
+    {
+      "term": "Mutual TLS",
+      "anchor": "#benefits",
+      "definition": "TLS in which both client and server authenticate with certificates."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

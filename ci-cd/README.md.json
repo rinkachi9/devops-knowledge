@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "ci-cd",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "ci-cd"
+    ]
+  },
+  "map": {
+    "group": "ci-cd"
+  }
+}

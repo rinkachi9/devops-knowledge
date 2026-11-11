@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "networking.network-operations.network-metrics",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "networking",
+      "operations",
+      "metrics",
+      "kpi"
+    ],
+    "aliases": [
+      "network KPIs",
+      "latency",
+      "jitter",
+      "packet loss",
+      "throughput",
+      "RTT",
+      "MTTR",
+      "availability"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc7680",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7680: A One-Way Loss Metric for IP Performance Metrics",
+      "url": "https://www.rfc-editor.org/rfc/rfc7680",
+      "year": 2016,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "blackbox",
+      "type": "documentation",
+      "publisher": "Prometheus project",
+      "title": "Blackbox exporter",
+      "url": "https://github.com/prometheus/blackbox_exporter",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "iperf3",
+      "type": "documentation",
+      "publisher": "ESnet",
+      "title": "iperf3",
+      "url": "https://software.es.net/iperf/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Round-trip time",
+      "anchor": "#metrics",
+      "definition": "The time for a request to reach a remote device and the reply to return."
+    },
+    {
+      "term": "Jitter",
+      "anchor": "#metrics",
+      "definition": "Variation of latency between packets."
+    },
+    {
+      "term": "Throughput",
+      "anchor": "#metrics",
+      "definition": "Data actually delivered per unit of time, as opposed to link capacity."
+    }
+  ],
+  "map": {
+    "group": "network-operations"
+  }
+}

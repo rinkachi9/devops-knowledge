@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.nagios",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "observability",
+      "monitoring",
+      "nagios",
+      "tool"
+    ],
+    "aliases": [
+      "NetSaint",
+      "Nagios Core",
+      "NRPE",
+      "NRDP",
+      "Icinga"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nagios-core-docs",
+      "type": "documentation",
+      "publisher": "Nagios Enterprises",
+      "title": "Nagios Core documentation",
+      "url": "https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "monitoring-plugins",
+      "type": "documentation",
+      "publisher": "Monitoring Plugins project",
+      "title": "Monitoring Plugins",
+      "url": "https://www.monitoring-plugins.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Nagios plugin",
+      "anchor": "#check-states-and-the-plugin-contract",
+      "definition": "An executable that performs one check and reports OK, WARNING, CRITICAL or UNKNOWN through exit codes 0 to 3."
+    },
+    {
+      "term": "Hard state",
+      "anchor": "#architecture",
+      "definition": "A problem state confirmed by max_check_attempts consecutive checks, which triggers notifications."
+    },
+    {
+      "term": "NRPE",
+      "anchor": "#remote-and-distributed-monitoring",
+      "definition": "Nagios Remote Plugin Executor, a daemon that runs plugins on remote hosts."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

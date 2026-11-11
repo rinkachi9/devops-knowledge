@@ -1,0 +1,90 @@
+{
+  "node": {
+    "id": "networking.application-layer.email.smtp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "email",
+      "smtp"
+    ],
+    "aliases": [
+      "Simple Mail Transfer Protocol",
+      "ESMTP",
+      "SMTP relay",
+      "submission",
+      "port 587",
+      "port 465",
+      "open relay"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.email.email-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc5321",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 5321: Simple Mail Transfer Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc5321",
+      "year": 2008,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8314",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8314: Cleartext Considered Obsolete",
+      "url": "https://www.rfc-editor.org/rfc/rfc8314",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8461",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8461: SMTP MTA Strict Transport Security",
+      "url": "https://www.rfc-editor.org/rfc/rfc8461",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "postfix-docs",
+      "type": "documentation",
+      "publisher": "Postfix project",
+      "title": "Postfix documentation",
+      "url": "https://www.postfix.org/documentation.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "SMTP envelope",
+      "anchor": "#commands-and-replies",
+      "definition": "The MAIL FROM and RCPT TO addresses used for routing and bounces, separate from message headers."
+    },
+    {
+      "term": "Open relay",
+      "anchor": "#authentication-methods",
+      "definition": "An SMTP server that forwards mail for anyone without authentication."
+    },
+    {
+      "term": "SMTP reply code",
+      "anchor": "#reply-codes",
+      "definition": "A three-digit status where 4xx means temporary and 5xx permanent failure."
+    }
+  ],
+  "map": {
+    "group": "email"
+  }
+}

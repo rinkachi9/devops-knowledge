@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "networking.traffic-management.load-balancing",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "load-balancing",
+      "scaling"
+    ],
+    "aliases": [
+      "load balancer",
+      "LB",
+      "horizontal scaling",
+      "health checks",
+      "sticky sessions",
+      "cross-zone load balancing"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.reverse-proxy",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "sdp",
+      "type": "website",
+      "publisher": "Donne Martin",
+      "title": "System Design Primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cf-lb",
+      "type": "website",
+      "publisher": "Cloudflare",
+      "title": "What is load balancing?",
+      "url": "https://www.cloudflare.com/learning/performance/what-is-load-balancing/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "haproxy-docs",
+      "type": "documentation",
+      "publisher": "HAProxy Technologies",
+      "title": "HAProxy documentation",
+      "url": "https://docs.haproxy.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Load balancer",
+      "anchor": "#definition-and-benefits",
+      "definition": "A component that distributes client requests across a pool of servers."
+    },
+    {
+      "term": "Health check",
+      "anchor": "#use-cases",
+      "definition": "A periodic probe that decides whether a backend receives traffic."
+    },
+    {
+      "term": "Horizontal scaling",
+      "anchor": "#horizontal-scaling",
+      "definition": "Adding more machines instead of a larger one, which requires stateless servers."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

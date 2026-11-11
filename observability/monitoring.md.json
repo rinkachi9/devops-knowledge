@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "observability.monitoring",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "observability",
+      "monitoring",
+      "alerting",
+      "golden-signals"
+    ],
+    "aliases": [
+      "alerting",
+      "golden signals",
+      "USE method",
+      "RED method",
+      "APM"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.observability-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "sre-monitoring",
+      "type": "book",
+      "publisher": "Google",
+      "title": "Site Reliability Engineering: Monitoring distributed systems",
+      "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "year": 2016,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "use-method",
+      "type": "website",
+      "publisher": "Brendan Gregg",
+      "title": "The USE Method",
+      "url": "https://www.brendangregg.com/usemethod.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "prom-alerting",
+      "type": "documentation",
+      "publisher": "Prometheus project",
+      "title": "Alerting rules",
+      "url": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Monitoring",
+      "anchor": "#summary",
+      "definition": "Continuous collection and analysis of metrics and logs against predefined conditions, with alerts when they occur."
+    },
+    {
+      "term": "Four golden signals",
+      "anchor": "#the-four-golden-signals-use-and-red",
+      "definition": "Latency, traffic, errors and saturation: the first metrics to watch for a user-facing service."
+    },
+    {
+      "term": "Alert fatigue",
+      "anchor": "#alerting",
+      "definition": "Desensitization caused by too many non-actionable alerts."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

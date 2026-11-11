@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "networking.application-layer.email.dmarc",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "networking",
+      "email",
+      "dmarc",
+      "security"
+    ],
+    "aliases": [
+      "Domain-based Message Authentication Reporting and Conformance",
+      "_dmarc",
+      "DMARC policy",
+      "alignment"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.email.dkim",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.email.spf",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc7489",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7489: DMARC",
+      "url": "https://www.rfc-editor.org/rfc/rfc7489",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dmarc-org",
+      "type": "website",
+      "publisher": "DMARC.org",
+      "title": "DMARC resources",
+      "url": "https://dmarc.org/resources/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "google-dmarc",
+      "type": "documentation",
+      "publisher": "Google",
+      "title": "Set up DMARC",
+      "url": "https://support.google.com/a/answer/2466580",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DMARC",
+      "anchor": "#definition",
+      "definition": "A policy and reporting framework that requires SPF or DKIM to pass in alignment with the From domain."
+    },
+    {
+      "term": "Identifier alignment",
+      "anchor": "#alignment",
+      "definition": "Matching the SPF or DKIM authenticated domain with the visible From domain."
+    },
+    {
+      "term": "Aggregate report",
+      "anchor": "#reports",
+      "definition": "A periodic XML summary of authentication results per sending source."
+    }
+  ],
+  "map": {
+    "group": "email"
+  }
+}

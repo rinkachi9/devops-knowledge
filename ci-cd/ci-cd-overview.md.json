@@ -1,0 +1,94 @@
+{
+  "node": {
+    "id": "ci-cd.ci-cd-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "ci-cd",
+      "continuous-integration",
+      "continuous-delivery",
+      "continuous-deployment"
+    ],
+    "aliases": [
+      "CI",
+      "CD",
+      "continuous integration",
+      "continuous delivery",
+      "continuous deployment",
+      "deployment pipeline"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "humble-farley-cd",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation",
+      "url": "https://continuousdelivery.com/",
+      "year": 2010,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "fowler-ci",
+      "type": "website",
+      "publisher": "martinfowler.com",
+      "title": "Continuous Integration",
+      "url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dora-cd",
+      "type": "website",
+      "publisher": "DORA",
+      "title": "Capabilities: Continuous delivery",
+      "url": "https://dora.dev/capabilities/continuous-delivery/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gha-docs",
+      "type": "documentation",
+      "publisher": "GitHub",
+      "title": "GitHub Actions documentation",
+      "url": "https://docs.github.com/en/actions",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Continuous integration",
+      "anchor": "#definitions",
+      "definition": "Integrating code into a shared branch frequently, with every integration verified by an automated build and tests."
+    },
+    {
+      "term": "Continuous delivery",
+      "anchor": "#definitions",
+      "definition": "Keeping every validated change releasable and delivered to a repository or staging, with a manual decision for production."
+    },
+    {
+      "term": "Continuous deployment",
+      "anchor": "#definitions",
+      "definition": "Deploying every change that passes the pipeline to production automatically."
+    },
+    {
+      "term": "Build once, deploy many",
+      "anchor": "#core-principles",
+      "definition": "Promoting the same tested artifact through all environments instead of rebuilding it."
+    }
+  ],
+  "map": {
+    "group": "ci-cd"
+  }
+}

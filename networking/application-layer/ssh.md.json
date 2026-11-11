@@ -1,0 +1,80 @@
+{
+  "node": {
+    "id": "networking.application-layer.ssh",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "networking",
+      "application-layer",
+      "ssh",
+      "security"
+    ],
+    "aliases": [
+      "Secure Shell",
+      "OpenSSH",
+      "SSH keys",
+      "SSH certificates",
+      "port forwarding",
+      "bastion",
+      "ProxyJump"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.ssl-and-tls",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc4251",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4251: The Secure Shell (SSH) Protocol Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4251",
+      "year": 2006,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "openssh-manual",
+      "type": "documentation",
+      "publisher": "OpenBSD project",
+      "title": "OpenSSH manual pages",
+      "url": "https://www.openssh.com/manual.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mozilla-ssh",
+      "type": "website",
+      "publisher": "Mozilla",
+      "title": "OpenSSH security guidelines",
+      "url": "https://infosec.mozilla.org/guidelines/openssh",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Host key verification",
+      "anchor": "#how-a-connection-is-established",
+      "definition": "Checking the server's public host key against known_hosts to detect impersonation."
+    },
+    {
+      "term": "Public key authentication",
+      "anchor": "#authentication-methods",
+      "definition": "Proving identity by signing with a private key whose public key is authorized on the server."
+    },
+    {
+      "term": "Port forwarding",
+      "anchor": "#port-forwarding-and-tunneling",
+      "definition": "Carrying other TCP connections through an SSH connection."
+    }
+  ],
+  "map": {
+    "group": "application-layer"
+  }
+}

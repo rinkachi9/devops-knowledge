@@ -1,0 +1,100 @@
+{
+  "node": {
+    "id": "networking.application-layer.dns.dns-records",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "application-layer",
+      "dns",
+      "records"
+    ],
+    "aliases": [
+      "resource record",
+      "A record",
+      "AAAA record",
+      "CNAME",
+      "MX record",
+      "TXT record",
+      "NS record",
+      "SOA record",
+      "SRV record",
+      "PTR record",
+      "zone file"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.dns.dns-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc1035",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1035: Domain Names, Implementation and Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035",
+      "year": 1987,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc2782",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2782: A DNS RR for specifying the location of services",
+      "url": "https://www.rfc-editor.org/rfc/rfc2782",
+      "year": 2000,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc2181",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2181: Clarifications to the DNS Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc2181",
+      "year": 1997,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "iana-dns-params",
+      "type": "standard",
+      "publisher": "IANA",
+      "title": "Domain Name System (DNS) Parameters",
+      "url": "https://www.iana.org/assignments/dns-parameters/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Resource record",
+      "anchor": "#zones-and-the-record-format",
+      "definition": "An entry in a DNS zone with name, type, class, TTL and data."
+    },
+    {
+      "term": "CNAME",
+      "anchor": "#cname-record",
+      "definition": "An alias record that points one name to another name."
+    },
+    {
+      "term": "SOA serial",
+      "anchor": "#soa-record",
+      "definition": "The zone version number that tells secondaries to transfer the zone."
+    },
+    {
+      "term": "Reverse DNS",
+      "anchor": "#ptr-record",
+      "definition": "Looking up the name for an IP address through PTR records."
+    }
+  ],
+  "map": {
+    "group": "dns"
+  }
+}

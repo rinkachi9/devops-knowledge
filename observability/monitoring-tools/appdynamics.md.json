@@ -1,0 +1,52 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.appdynamics",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "observability",
+      "apm",
+      "appdynamics",
+      "tool"
+    ],
+    "aliases": [
+      "Splunk AppDynamics",
+      "AppD",
+      "business transaction"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "appd-docs",
+      "type": "documentation",
+      "publisher": "Cisco",
+      "title": "Splunk AppDynamics documentation",
+      "url": "https://docs.appdynamics.com/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Business transaction",
+      "anchor": "#model-applications-tiers-nodes-and-business-transactions",
+      "definition": "An end-to-end user action traced across every tier it touches."
+    },
+    {
+      "term": "Health rule",
+      "anchor": "#key-features",
+      "definition": "A condition on metrics or baselines that triggers alerts and actions in AppDynamics."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "node": {
+    "id": "containers-and-virtualization.docker",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "containers-and-virtualization",
+      "containers",
+      "docker",
+      "oci"
+    ],
+    "aliases": [
+      "Dockerfile",
+      "Docker Compose",
+      "container image",
+      "Docker Engine"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers-and-virtualization.virtualization",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "docker-docs",
+      "type": "documentation",
+      "publisher": "Docker Inc.",
+      "title": "Docker documentation",
+      "url": "https://docs.docker.com/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dockerfile-ref",
+      "type": "documentation",
+      "publisher": "Docker Inc.",
+      "title": "Dockerfile reference",
+      "url": "https://docs.docker.com/reference/dockerfile/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "oci",
+      "type": "standard",
+      "publisher": "Open Container Initiative",
+      "title": "OCI specifications",
+      "url": "https://opencontainers.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-190",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-190: Application Container Security Guide",
+      "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Container image",
+      "anchor": "#the-eight-core-concepts",
+      "definition": "A read-only, layered package of an application and its dependencies, built from a Dockerfile."
+    },
+    {
+      "term": "Container",
+      "anchor": "#what-a-container-is-in-linux-terms",
+      "definition": "A process isolated with namespaces and limited with cgroups, running from an image with a writable layer."
+    },
+    {
+      "term": "Docker volume",
+      "anchor": "#storage-types",
+      "definition": "Persistent storage managed by Docker that outlives containers."
+    }
+  ],
+  "map": {
+    "group": "containers-and-virtualization"
+  }
+}

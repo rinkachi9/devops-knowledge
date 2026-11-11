@@ -1,0 +1,70 @@
+{
+  "node": {
+    "id": "networking.link-layer.switch",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "networking",
+      "link-layer",
+      "switch",
+      "ethernet"
+    ],
+    "aliases": [
+      "network switch",
+      "MAC address table",
+      "spanning tree",
+      "STP",
+      "LACP",
+      "layer 3 switch"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.networking-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ieee8021q",
+      "type": "standard",
+      "publisher": "IEEE",
+      "title": "IEEE 802.1Q-2022: Bridges and Bridged Networks",
+      "url": "https://standards.ieee.org/ieee/802.1Q/10323/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ieee8021ax",
+      "type": "standard",
+      "publisher": "IEEE",
+      "title": "IEEE 802.1AX: Link Aggregation",
+      "url": "https://standards.ieee.org/ieee/802.1AX/6768/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "MAC learning",
+      "anchor": "#how-it-works",
+      "definition": "Recording each frame's source MAC address and port to build the forwarding table."
+    },
+    {
+      "term": "Spanning Tree Protocol",
+      "anchor": "#key-features",
+      "definition": "A protocol that blocks redundant layer 2 paths to prevent loops."
+    },
+    {
+      "term": "MAC flooding",
+      "anchor": "#security-best-practices",
+      "definition": "An attack that fills the MAC table so the switch floods traffic to all ports."
+    }
+  ],
+  "map": {
+    "group": "link-layer"
+  }
+}

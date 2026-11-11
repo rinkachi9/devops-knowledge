@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "networking.traffic-management.load-balancing-algorithms",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "load-balancing",
+      "algorithms"
+    ],
+    "aliases": [
+      "round robin",
+      "least connections",
+      "IP hash",
+      "consistent hashing",
+      "weighted round robin"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.load-balancing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cf-lb-algos",
+      "type": "website",
+      "publisher": "Cloudflare",
+      "title": "Types of load balancing algorithms",
+      "url": "https://www.cloudflare.com/learning/performance/types-of-load-balancing-algorithms/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nginx-upstream",
+      "type": "documentation",
+      "publisher": "nginx project",
+      "title": "ngx_http_upstream_module",
+      "url": "https://nginx.org/en/docs/http/ngx_http_upstream_module.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Static load balancing",
+      "anchor": "#static-and-dynamic",
+      "definition": "Distributing traffic without considering current server state."
+    },
+    {
+      "term": "Least connections",
+      "anchor": "#dynamic-algorithms",
+      "definition": "Sending to the server with the fewest open connections."
+    },
+    {
+      "term": "Consistent hashing",
+      "anchor": "#consistent-hashing",
+      "definition": "Hashing on a ring so that pool changes remap only a small share of keys."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

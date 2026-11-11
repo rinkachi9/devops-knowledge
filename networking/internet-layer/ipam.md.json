@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "networking.internet-layer.ipam",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "ipam",
+      "ddi"
+    ],
+    "aliases": [
+      "IP address management",
+      "DDI",
+      "NetBox",
+      "phpIPAM",
+      "Infoblox"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.cidr",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "netbox-docs",
+      "type": "documentation",
+      "publisher": "NetBox Labs",
+      "title": "NetBox documentation",
+      "url": "https://netboxlabs.com/docs/netbox/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "aws-ipam",
+      "type": "documentation",
+      "publisher": "Amazon Web Services",
+      "title": "Amazon VPC IP Address Manager",
+      "url": "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc6811",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 6811: BGP Prefix Origin Validation",
+      "url": "https://www.rfc-editor.org/rfc/rfc6811",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "IPAM",
+      "anchor": "#definition-and-importance",
+      "definition": "Processes and tools to plan, allocate, track and audit IP address space."
+    },
+    {
+      "term": "DDI",
+      "anchor": "#summary",
+      "definition": "The combination of DNS, DHCP and IPAM in one managed system."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

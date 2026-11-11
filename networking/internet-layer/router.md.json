@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "networking.internet-layer.router",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 5,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "routing",
+      "router"
+    ],
+    "aliases": [
+      "routing",
+      "routing table",
+      "longest prefix match",
+      "edge router",
+      "OSPF",
+      "BGP"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.ip",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc1812",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1812: Requirements for IP Version 4 Routers",
+      "url": "https://www.rfc-editor.org/rfc/rfc1812",
+      "year": 1995,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc4271",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4271: A Border Gateway Protocol 4 (BGP-4)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "year": 2006,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc2328",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2328: OSPF Version 2",
+      "url": "https://www.rfc-editor.org/rfc/rfc2328",
+      "year": 1998,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Router",
+      "anchor": "#definition",
+      "definition": "A layer 3 device that forwards packets between networks by destination IP address."
+    },
+    {
+      "term": "Longest prefix match",
+      "anchor": "#how-it-works",
+      "definition": "Choosing the most specific matching route for a destination."
+    },
+    {
+      "term": "Routing protocol",
+      "anchor": "#routing-protocols",
+      "definition": "A protocol routers use to exchange reachability information and build routing tables."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

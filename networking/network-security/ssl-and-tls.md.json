@@ -1,0 +1,91 @@
+{
+  "node": {
+    "id": "networking.network-security.ssl-and-tls",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "networking",
+      "security",
+      "tls",
+      "certificates"
+    ],
+    "aliases": [
+      "TLS",
+      "SSL",
+      "TLS handshake",
+      "X.509",
+      "certificate authority",
+      "Let's Encrypt",
+      "mTLS",
+      "forward secrecy"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-models.tcp-ip-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc8446",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8446: TLS 1.3",
+      "url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8996",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8996: Deprecating TLS 1.0 and TLS 1.1",
+      "url": "https://www.rfc-editor.org/rfc/rfc8996",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "mozilla-tls",
+      "type": "website",
+      "publisher": "Mozilla",
+      "title": "Server Side TLS configuration generator",
+      "url": "https://ssl-config.mozilla.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cabf-br",
+      "type": "standard",
+      "publisher": "CA/Browser Forum",
+      "title": "Baseline Requirements",
+      "url": "https://cabforum.org/working-groups/server/baseline-requirements/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "TLS handshake",
+      "anchor": "#how-the-handshake-works",
+      "definition": "The negotiation of version, ciphers, authentication and keys before encrypted data flows."
+    },
+    {
+      "term": "Forward secrecy",
+      "anchor": "#how-the-handshake-works",
+      "definition": "Protection of past sessions even if the server's long-term key is later compromised."
+    },
+    {
+      "term": "X.509 certificate",
+      "anchor": "#certificates",
+      "definition": "A CA-signed document binding a public key to names such as DNS names."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

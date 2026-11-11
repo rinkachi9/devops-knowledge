@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "devsecops",
+    "kind": "index",
+    "status": "draft",
+    "order": 10,
+    "tags": [
+      "devsecops"
+    ]
+  },
+  "map": {
+    "group": "devsecops"
+  }
+}

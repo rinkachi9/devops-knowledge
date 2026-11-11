@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "cloud-computing.paas",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "cloud-computing",
+      "paas"
+    ],
+    "aliases": [
+      "PaaS",
+      "Platform as a Service",
+      "Heroku",
+      "App Engine",
+      "Elastic Beanstalk",
+      "buildpacks"
+    ]
+  },
+  "links": [
+    {
+      "to": "cloud-computing.iaas",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-145",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-145: The NIST Definition of Cloud Computing",
+      "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "twelve-factor",
+      "type": "website",
+      "publisher": "Heroku",
+      "title": "The Twelve-Factor App",
+      "url": "https://12factor.net/",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cnb",
+      "type": "documentation",
+      "publisher": "CNCF",
+      "title": "Cloud Native Buildpacks",
+      "url": "https://buildpacks.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Platform as a Service",
+      "anchor": "#definition",
+      "definition": "A cloud model in which the provider runs the platform and the customer brings only application code and data."
+    },
+    {
+      "term": "Buildpack",
+      "anchor": "#components",
+      "definition": "A tool that detects an application's language and builds a runnable image without a Dockerfile."
+    }
+  ],
+  "map": {
+    "group": "cloud-computing"
+  }
+}

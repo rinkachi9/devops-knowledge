@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "data-processing",
+    "kind": "index",
+    "status": "draft",
+    "order": 12,
+    "tags": [
+      "data-processing"
+    ]
+  },
+  "map": {
+    "group": "data-processing"
+  }
+}

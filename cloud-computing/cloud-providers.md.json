@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "cloud-computing.cloud-providers",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "cloud-computing",
+      "aws",
+      "azure",
+      "google-cloud"
+    ],
+    "aliases": [
+      "cloud provider",
+      "hyperscaler",
+      "AWS",
+      "Azure",
+      "GCP",
+      "shared responsibility model"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers-and-virtualization.virtualization",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-145",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-145: The NIST Definition of Cloud Computing",
+      "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "aws-shared-resp",
+      "type": "documentation",
+      "publisher": "Amazon Web Services",
+      "title": "Shared Responsibility Model",
+      "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "finops",
+      "type": "website",
+      "publisher": "FinOps Foundation",
+      "title": "FinOps Framework",
+      "url": "https://www.finops.org/framework/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Cloud computing",
+      "anchor": "#definition-of-cloud-computing",
+      "definition": "On-demand network access to a shared pool of configurable resources that are rapidly provisioned and released, as defined by NIST."
+    },
+    {
+      "term": "Shared responsibility model",
+      "anchor": "#the-shared-responsibility-model",
+      "definition": "The split of security and operations duties between provider and customer by service model."
+    }
+  ],
+  "map": {
+    "group": "cloud-computing"
+  }
+}

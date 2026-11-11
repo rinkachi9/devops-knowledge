@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "operating-systems.distributions.debian-and-ubuntu",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "distributions",
+      "debian",
+      "ubuntu",
+      "apt"
+    ],
+    "aliases": [
+      "Debian",
+      "Ubuntu",
+      "APT",
+      "dpkg",
+      "Ubuntu LTS"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "debian-handbook",
+      "type": "book",
+      "publisher": "Freexian",
+      "title": "The Debian Administrator's Handbook",
+      "url": "https://debian-handbook.info/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ubuntu-release-cycle",
+      "type": "website",
+      "publisher": "Canonical",
+      "title": "Ubuntu release cycle",
+      "url": "https://ubuntu.com/about/release-cycle",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "APT",
+      "anchor": "#package-management",
+      "definition": "The Advanced Package Tool that manages .deb packages and repositories on Debian and Ubuntu."
+    },
+    {
+      "term": "LTS release",
+      "anchor": "#debian-and-ubuntu-compared",
+      "definition": "A long-term support Ubuntu release published every two years."
+    }
+  ],
+  "map": {
+    "group": "distributions"
+  }
+}

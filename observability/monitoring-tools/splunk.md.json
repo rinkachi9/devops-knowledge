@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.splunk",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "observability",
+      "logs",
+      "siem",
+      "splunk",
+      "tool"
+    ],
+    "aliases": [
+      "SPL",
+      "Splunk Enterprise",
+      "Splunk Cloud"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "splunk-docs",
+      "type": "documentation",
+      "publisher": "Splunk, a Cisco company",
+      "title": "Splunk documentation",
+      "url": "https://docs.splunk.com/Documentation",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "splunk-spl",
+      "type": "documentation",
+      "publisher": "Splunk, a Cisco company",
+      "title": "Search Reference",
+      "url": "https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/WhatsInThisManual",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "SPL",
+      "anchor": "#spl",
+      "definition": "Splunk Processing Language, a piped query language for searching and transforming events."
+    },
+    {
+      "term": "Schema on read",
+      "anchor": "#summary",
+      "definition": "Extracting fields when data is searched rather than when it is stored."
+    },
+    {
+      "term": "Universal forwarder",
+      "anchor": "#architecture",
+      "definition": "A lightweight Splunk agent that collects and ships raw data to indexers."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

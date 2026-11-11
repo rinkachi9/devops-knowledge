@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.distributions",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "operating-systems",
+      "distributions"
+    ]
+  },
+  "map": {
+    "group": "distributions"
+  }
+}

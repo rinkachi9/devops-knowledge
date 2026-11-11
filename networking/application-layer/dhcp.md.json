@@ -1,0 +1,80 @@
+{
+  "node": {
+    "id": "networking.application-layer.dhcp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "networking",
+      "application-layer",
+      "dhcp"
+    ],
+    "aliases": [
+      "Dynamic Host Configuration Protocol",
+      "DORA",
+      "DHCP relay",
+      "IP helper",
+      "DHCP snooping",
+      "DHCPv6",
+      "SLAAC"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.ip-addressing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc2131",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2131: Dynamic Host Configuration Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131",
+      "year": 1997,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8415",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8415: DHCPv6",
+      "url": "https://www.rfc-editor.org/rfc/rfc8415",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "attack-t1557-003",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "ATT&CK T1557.003: DHCP Spoofing",
+      "url": "https://attack.mitre.org/techniques/T1557/003/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DORA",
+      "anchor": "#how-it-works-dora",
+      "definition": "Discover, Offer, Request, Acknowledge: the four-step DHCP exchange."
+    },
+    {
+      "term": "Lease",
+      "anchor": "#lease-time",
+      "definition": "The limited time for which a DHCP address is assigned."
+    },
+    {
+      "term": "DHCP relay",
+      "anchor": "#dhcp-relay",
+      "definition": "A router function that forwards DHCP broadcasts to a central server."
+    }
+  ],
+  "map": {
+    "group": "application-layer"
+  }
+}

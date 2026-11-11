@@ -1,0 +1,81 @@
+{
+  "node": {
+    "id": "observability.log-management.elastic-stack",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "observability",
+      "logs",
+      "elasticsearch",
+      "kibana",
+      "tool"
+    ],
+    "aliases": [
+      "ELK Stack",
+      "ELK",
+      "Elasticsearch",
+      "Logstash",
+      "Kibana",
+      "Beats",
+      "OpenSearch"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.log-management.log-management-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "elastic-docs",
+      "type": "documentation",
+      "publisher": "Elastic",
+      "title": "Elastic documentation",
+      "url": "https://www.elastic.co/docs",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "elastic-agpl",
+      "type": "website",
+      "publisher": "Elastic",
+      "title": "Elasticsearch is Open Source. Again!",
+      "url": "https://www.elastic.co/blog/elasticsearch-is-open-source-again",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "opensearch-docs",
+      "type": "documentation",
+      "publisher": "OpenSearch Project",
+      "title": "OpenSearch documentation",
+      "url": "https://opensearch.org/docs/latest/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Shard",
+      "anchor": "#elasticsearch",
+      "definition": "A subdivision of an Elasticsearch index, itself a Lucene index, distributed across nodes."
+    },
+    {
+      "term": "Inverted index",
+      "anchor": "#elasticsearch",
+      "definition": "A map from each term to the documents containing it, which makes full-text search fast."
+    },
+    {
+      "term": "Grok",
+      "anchor": "#logstash",
+      "definition": "A Logstash filter that parses unstructured text with named patterns."
+    }
+  ],
+  "map": {
+    "group": "log-management"
+  }
+}

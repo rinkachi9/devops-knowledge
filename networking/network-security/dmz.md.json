@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "networking.network-security.dmz",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "security",
+      "dmz",
+      "firewall"
+    ],
+    "aliases": [
+      "demilitarized zone",
+      "perimeter network",
+      "screened subnet"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.firewalls",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-41",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-41 Rev. 1: Guidelines on Firewalls and Firewall Policy",
+      "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+      "year": 2009,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cis-controls",
+      "type": "standard",
+      "publisher": "Center for Internet Security",
+      "title": "CIS Critical Security Controls v8",
+      "url": "https://www.cisecurity.org/controls",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DMZ",
+      "anchor": "#definition-and-goal",
+      "definition": "A separate network segment for internet-facing services between the Internet and the internal network."
+    },
+    {
+      "term": "Dual firewall DMZ",
+      "anchor": "#architecture-models",
+      "definition": "A DMZ between an outer and an inner firewall so traffic is filtered twice."
+    },
+    {
+      "term": "Egress filtering",
+      "anchor": "#security-mechanisms",
+      "definition": "Restricting outbound traffic from a zone to only required destinations."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

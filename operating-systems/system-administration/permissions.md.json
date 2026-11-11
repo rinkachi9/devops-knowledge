@@ -1,0 +1,85 @@
+{
+  "node": {
+    "id": "operating-systems.system-administration.permissions",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "permissions",
+      "security",
+      "linux"
+    ],
+    "aliases": [
+      "chmod",
+      "chown",
+      "umask",
+      "SUID",
+      "SGID",
+      "sticky bit",
+      "ACL",
+      "file permissions"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.storage-and-io.file-systems",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "man-chmod",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "chmod(1)",
+      "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-acl",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "acl(5)",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-caps",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "capabilities(7)",
+      "url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Permission bits",
+      "anchor": "#the-permission-string",
+      "definition": "Read, write and execute bits for owner, group and others."
+    },
+    {
+      "term": "SUID",
+      "anchor": "#special-permissions",
+      "definition": "A bit that makes an executable run with its owner's privileges."
+    },
+    {
+      "term": "umask",
+      "anchor": "#default-permissions-with-umask",
+      "definition": "A mask of bits removed from the default mode of new files and directories."
+    },
+    {
+      "term": "ACL",
+      "anchor": "#access-control-lists-acls",
+      "definition": "Additional per-user and per-group permission entries beyond the three classes."
+    }
+  ],
+  "map": {
+    "group": "system-administration"
+  }
+}

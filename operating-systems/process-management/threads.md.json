@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "operating-systems.process-management.threads",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "threads",
+      "concurrency"
+    ],
+    "aliases": [
+      "thread",
+      "lightweight process",
+      "multithreading",
+      "user-level thread",
+      "kernel-level thread",
+      "pthreads"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "man-pthreads",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "pthreads(7)",
+      "url": "https://man7.org/linux/man-pages/man7/pthreads.7.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ostep",
+      "type": "book",
+      "publisher": "Arpaci-Dusseau",
+      "title": "Operating Systems: Three Easy Pieces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Thread",
+      "anchor": "#definition",
+      "definition": "A single sequential flow of execution within a process, sharing its address space."
+    },
+    {
+      "term": "Thread control block",
+      "anchor": "#why-threads-are-used",
+      "definition": "The per-thread kernel record that stores registers and state during context switches."
+    },
+    {
+      "term": "Race condition",
+      "anchor": "#synchronization-and-its-failure-modes",
+      "definition": "A bug in which the result depends on the timing of concurrent threads."
+    }
+  ],
+  "map": {
+    "group": "process-management"
+  }
+}

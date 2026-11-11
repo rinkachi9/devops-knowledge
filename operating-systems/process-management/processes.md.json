@@ -1,0 +1,101 @@
+{
+  "node": {
+    "id": "operating-systems.process-management.processes",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "processes",
+      "signals",
+      "linux"
+    ],
+    "aliases": [
+      "process",
+      "PID",
+      "PPID",
+      "daemon",
+      "zombie process",
+      "fork",
+      "exec",
+      "signals",
+      "nice"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "man-fork",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "fork(2)",
+      "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-signal",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "signal(7)",
+      "url": "https://man7.org/linux/man-pages/man7/signal.7.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-ps",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "ps(1)",
+      "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "tlpi",
+      "type": "book",
+      "publisher": "No Starch Press",
+      "title": "The Linux Programming Interface",
+      "url": "https://man7.org/tlpi/",
+      "year": 2010,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Process",
+      "anchor": "#definition",
+      "definition": "A program in execution with its own memory, state and resources, identified by a PID."
+    },
+    {
+      "term": "Daemon",
+      "anchor": "#types-of-processes",
+      "definition": "A background process started at boot that runs as a service."
+    },
+    {
+      "term": "Zombie process",
+      "anchor": "#process-states",
+      "definition": "A terminated process whose exit status has not yet been collected by its parent."
+    },
+    {
+      "term": "Signal",
+      "anchor": "#signals",
+      "definition": "An asynchronous notification delivered to a process by the kernel."
+    },
+    {
+      "term": "Nice value",
+      "anchor": "#process-priority-and-nice-values",
+      "definition": "A scheduling weight from -20 (highest priority) to 19 (lowest)."
+    }
+  ],
+  "map": {
+    "group": "process-management"
+  }
+}

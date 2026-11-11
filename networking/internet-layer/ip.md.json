@@ -1,0 +1,83 @@
+{
+  "node": {
+    "id": "networking.internet-layer.ip",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "ip",
+      "ipv6",
+      "protocol"
+    ],
+    "aliases": [
+      "Internet Protocol",
+      "IPv4",
+      "IPv6",
+      "TTL",
+      "MTU",
+      "fragmentation",
+      "IPsec"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-models.tcp-ip-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc791",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 791: Internet Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc791",
+      "year": 1981,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8200",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8200: Internet Protocol, Version 6 (IPv6) Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc2827",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 2827: Network Ingress Filtering",
+      "url": "https://www.rfc-editor.org/rfc/rfc2827",
+      "year": 2000,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Internet Protocol",
+      "anchor": "#definition-and-functions",
+      "definition": "The connectionless, best-effort network layer protocol that addresses and routes packets."
+    },
+    {
+      "term": "TTL",
+      "anchor": "#packet-structure",
+      "definition": "A header field decremented at each hop; the packet is dropped at zero."
+    },
+    {
+      "term": "MTU",
+      "anchor": "#mtu-and-fragmentation",
+      "definition": "The largest packet size a link can carry without fragmentation."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

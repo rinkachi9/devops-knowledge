@@ -1,0 +1,80 @@
+{
+  "node": {
+    "id": "containers-and-virtualization.virtualization",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "containers-and-virtualization",
+      "virtualization",
+      "hypervisor",
+      "vm"
+    ],
+    "aliases": [
+      "virtual machine",
+      "VM",
+      "hypervisor",
+      "VMM",
+      "KVM",
+      "type 1 hypervisor",
+      "type 2 hypervisor"
+    ]
+  },
+  "sources": [
+    {
+      "key": "popek-goldberg",
+      "type": "paper",
+      "publisher": "Communications of the ACM",
+      "title": "Formal requirements for virtualizable third generation architectures",
+      "url": "https://dl.acm.org/doi/10.1145/361011.361073",
+      "year": 1974,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-125",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-125: Guide to Security for Full Virtualization Technologies",
+      "url": "https://csrc.nist.gov/pubs/sp/800/125/final",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "libvirt-docs",
+      "type": "documentation",
+      "publisher": "libvirt project",
+      "title": "libvirt documentation",
+      "url": "https://libvirt.org/docs.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Hypervisor",
+      "anchor": "#terminology",
+      "definition": "Software that creates and runs virtual machines and allocates physical resources to them."
+    },
+    {
+      "term": "Type 1 hypervisor",
+      "anchor": "#hypervisor-types",
+      "definition": "A hypervisor that runs directly on the hardware without a host operating system."
+    },
+    {
+      "term": "Type 2 hypervisor",
+      "anchor": "#hypervisor-types",
+      "definition": "A hypervisor that runs as an application on a host operating system."
+    },
+    {
+      "term": "Hardware-assisted virtualization",
+      "anchor": "#how-a-hypervisor-works",
+      "definition": "CPU extensions such as Intel VT-x and AMD-V that let guest kernels run directly on the CPU."
+    }
+  ],
+  "map": {
+    "group": "containers-and-virtualization"
+  }
+}

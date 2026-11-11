@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "foundations",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "foundations"
+    ]
+  },
+  "map": {
+    "group": "foundations"
+  }
+}

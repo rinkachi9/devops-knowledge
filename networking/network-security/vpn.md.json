@@ -1,0 +1,82 @@
+{
+  "node": {
+    "id": "networking.network-security.vpn",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "networking",
+      "security",
+      "vpn",
+      "encryption"
+    ],
+    "aliases": [
+      "virtual private network",
+      "WireGuard",
+      "IPsec",
+      "IKEv2",
+      "OpenVPN",
+      "site-to-site VPN",
+      "remote access VPN"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.ssl-and-tls",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "wireguard-paper",
+      "type": "paper",
+      "publisher": "NDSS",
+      "title": "WireGuard: Next Generation Kernel Network Tunnel",
+      "url": "https://www.wireguard.com/papers/wireguard.pdf",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc7296",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7296: Internet Key Exchange Protocol Version 2",
+      "url": "https://www.rfc-editor.org/rfc/rfc7296",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-77",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-77 Rev. 1: Guide to IPsec VPNs",
+      "url": "https://csrc.nist.gov/pubs/sp/800/77/r1/final",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "VPN",
+      "anchor": "#definition-and-functions",
+      "definition": "An encrypted tunnel over an untrusted network that makes remote devices or networks appear directly connected."
+    },
+    {
+      "term": "Encapsulation",
+      "anchor": "#how-it-works",
+      "definition": "Wrapping an encrypted original packet inside a new packet addressed to the VPN gateway."
+    },
+    {
+      "term": "Kill switch",
+      "anchor": "#security-considerations",
+      "definition": "Firewall rules that block all traffic outside the tunnel if the VPN drops."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

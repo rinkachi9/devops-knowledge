@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "observability.observability-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "observability",
+      "telemetry",
+      "opentelemetry"
+    ],
+    "aliases": [
+      "o11y",
+      "MELT",
+      "three pillars of observability",
+      "telemetry"
+    ]
+  },
+  "links": [
+    {
+      "to": "foundations.devops-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "obs-eng",
+      "type": "book",
+      "publisher": "O'Reilly",
+      "title": "Observability Engineering",
+      "url": "https://www.oreilly.com/library/view/observability-engineering/9781492076438/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "otel-docs",
+      "type": "documentation",
+      "publisher": "OpenTelemetry, CNCF",
+      "title": "OpenTelemetry documentation",
+      "url": "https://opentelemetry.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sre-monitoring",
+      "type": "book",
+      "publisher": "Google",
+      "title": "Site Reliability Engineering: Monitoring distributed systems",
+      "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "year": 2016,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Observability",
+      "anchor": "#definition",
+      "definition": "The ability to understand a system's internal state from the telemetry it emits, including for problems nobody predicted."
+    },
+    {
+      "term": "Trace",
+      "anchor": "#the-telemetry-signals",
+      "definition": "The recorded path of one request across services, made of timed spans."
+    },
+    {
+      "term": "High cardinality",
+      "anchor": "#observability-compared-with-monitoring",
+      "definition": "Attributes with many distinct values that allow telemetry to be sliced finely."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

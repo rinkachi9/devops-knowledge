@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.storage-and-io",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "operating-systems",
+      "storage-and-io"
+    ]
+  },
+  "map": {
+    "group": "storage-and-io"
+  }
+}

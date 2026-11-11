@@ -1,0 +1,79 @@
+{
+  "node": {
+    "id": "operating-systems.process-management.cpu-usage",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "operating-systems",
+      "cpu",
+      "performance",
+      "troubleshooting"
+    ],
+    "aliases": [
+      "high CPU",
+      "100 percent CPU",
+      "load average",
+      "steal time",
+      "iowait"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "proc-stat",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "proc_stat(5)",
+      "url": "https://man7.org/linux/man-pages/man5/proc_stat.5.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gregg-sysperf",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "Systems Performance, 2nd edition",
+      "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gregg-loadavg",
+      "type": "website",
+      "publisher": "Brendan Gregg",
+      "title": "Linux load averages: solving the mystery",
+      "url": "https://www.brendangregg.com/blog/2017-08-08/linux-load-averages.html",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "CPU time categories",
+      "anchor": "#how-cpu-time-is-accounted",
+      "definition": "The split of CPU time into user, system, nice, idle, iowait, interrupt and steal."
+    },
+    {
+      "term": "Load average",
+      "anchor": "#load-average-compared-with-cpu-usage",
+      "definition": "The average number of runnable or uninterruptible tasks over 1, 5 and 15 minutes."
+    },
+    {
+      "term": "Busy waiting",
+      "anchor": "#the-nine-common-causes-of-100-percent-cpu-usage",
+      "definition": "Repeatedly polling a condition instead of blocking, which wastes CPU."
+    }
+  ],
+  "map": {
+    "group": "process-management"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "networking.network-operations.network-tools",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "networking",
+      "operations",
+      "tools",
+      "troubleshooting"
+    ],
+    "aliases": [
+      "Wireshark",
+      "Nmap",
+      "tcpdump",
+      "traceroute",
+      "iperf",
+      "netcat",
+      "dig",
+      "nslookup",
+      "OpenVAS"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.networking-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "wireshark-guide",
+      "type": "documentation",
+      "publisher": "Wireshark Foundation",
+      "title": "Wireshark User's Guide",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nmap-ref",
+      "type": "documentation",
+      "publisher": "Gordon Lyon",
+      "title": "Nmap Reference Guide",
+      "url": "https://nmap.org/book/man.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "tcpdump",
+      "type": "documentation",
+      "publisher": "The Tcpdump Group",
+      "title": "tcpdump and libpcap",
+      "url": "https://www.tcpdump.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Packet capture",
+      "anchor": "#tools",
+      "definition": "Recording network packets for inspection with tools such as tcpdump and Wireshark."
+    },
+    {
+      "term": "Port scan",
+      "anchor": "#tools",
+      "definition": "Probing a host for open ports, done only with authorization."
+    }
+  ],
+  "map": {
+    "group": "network-operations"
+  }
+}

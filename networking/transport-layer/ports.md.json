@@ -1,0 +1,92 @@
+{
+  "node": {
+    "id": "networking.transport-layer.ports",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "networking",
+      "transport-layer",
+      "ports",
+      "tcp",
+      "udp"
+    ],
+    "aliases": [
+      "port number",
+      "well-known ports",
+      "ephemeral ports",
+      "port forwarding",
+      "TCP",
+      "UDP",
+      "5-tuple"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-models.tcp-ip-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "iana-ports",
+      "type": "standard",
+      "publisher": "IANA",
+      "title": "Service Name and Transport Protocol Port Number Registry",
+      "url": "https://www.iana.org/assignments/service-names-port-numbers/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc6335",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 6335: Port Number Registry Procedures",
+      "url": "https://www.rfc-editor.org/rfc/rfc6335",
+      "year": 2011,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc9293",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 9293: Transmission Control Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc768",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 768: User Datagram Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc768",
+      "year": 1980,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Port",
+      "anchor": "#definition",
+      "definition": "A 16-bit transport layer number that identifies a process or service on a host."
+    },
+    {
+      "term": "Ephemeral port",
+      "anchor": "#port-ranges",
+      "definition": "A temporary source port assigned by the OS for a client connection."
+    },
+    {
+      "term": "Port forwarding",
+      "anchor": "#port-forwarding",
+      "definition": "Redirecting traffic from one address and port to another."
+    }
+  ],
+  "map": {
+    "group": "transport-layer"
+  }
+}

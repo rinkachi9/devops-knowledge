@@ -1,0 +1,65 @@
+{
+  "node": {
+    "id": "networking.traffic-management.layer-7-load-balancing",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "load-balancing",
+      "http"
+    ],
+    "aliases": [
+      "L7 load balancer",
+      "application load balancer",
+      "content-based routing"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.load-balancing",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.traffic-management.layer-4-load-balancing",
+      "rel": "contrasts"
+    }
+  ],
+  "sources": [
+    {
+      "key": "f5-l7",
+      "type": "website",
+      "publisher": "F5",
+      "title": "Layer 7 load balancing",
+      "url": "https://www.f5.com/glossary/layer-7-load-balancing",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "gateway-api",
+      "type": "documentation",
+      "publisher": "Kubernetes SIG Network",
+      "title": "Gateway API",
+      "url": "https://gateway-api.sigs.k8s.io/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Layer 7 load balancing",
+      "anchor": "#definition",
+      "definition": "Distributing requests based on application data such as host, path, headers and cookies."
+    },
+    {
+      "term": "Context switching",
+      "anchor": "#features",
+      "definition": "Routing requests by their content and context."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

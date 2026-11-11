@@ -1,0 +1,63 @@
+{
+  "node": {
+    "id": "networking.traffic-management.layer-4-load-balancing",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "load-balancing",
+      "tcp"
+    ],
+    "aliases": [
+      "L4 load balancer",
+      "network load balancer",
+      "TCP load balancing",
+      "IPVS",
+      "direct server return"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.load-balancing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "f5-l4",
+      "type": "website",
+      "publisher": "F5",
+      "title": "Layer 4 load balancing",
+      "url": "https://www.f5.com/glossary/layer-4-load-balancing",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "lvs",
+      "type": "documentation",
+      "publisher": "LVS project",
+      "title": "Linux Virtual Server documentation",
+      "url": "http://www.linuxvirtualserver.org/Documents.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Layer 4 load balancing",
+      "anchor": "#definition",
+      "definition": "Distributing connections based on IP addresses, ports and protocol without reading content."
+    },
+    {
+      "term": "Direct server return",
+      "anchor": "#forwarding-modes",
+      "definition": "Backends reply directly to clients, bypassing the load balancer."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

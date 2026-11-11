@@ -1,0 +1,72 @@
+{
+  "node": {
+    "id": "operating-systems.posix",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "posix",
+      "unix",
+      "standards",
+      "shell"
+    ],
+    "aliases": [
+      "Portable Operating System Interface",
+      "IEEE 1003.1",
+      "Single UNIX Specification",
+      "SUS",
+      "BRE",
+      "ERE"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "posix-2024",
+      "type": "standard",
+      "publisher": "The Open Group and IEEE",
+      "title": "The Open Group Base Specifications Issue 8, IEEE Std 1003.1-2024",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/",
+      "year": 2024,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "fhs-3",
+      "type": "standard",
+      "publisher": "Linux Foundation",
+      "title": "Filesystem Hierarchy Standard 3.0",
+      "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "POSIX",
+      "anchor": "#summary",
+      "definition": "A family of IEEE standards defining a portable interface for Unix-like operating systems."
+    },
+    {
+      "term": "POSIX locale",
+      "anchor": "#locale",
+      "definition": "The default locale every conforming system provides, identical to the C locale."
+    },
+    {
+      "term": "BRE and ERE",
+      "anchor": "#regular-expressions",
+      "definition": "The basic and extended regular expression flavors defined by POSIX."
+    }
+  ],
+  "map": {
+    "group": "operating-systems"
+  }
+}

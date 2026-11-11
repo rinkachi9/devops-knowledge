@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.traffic-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "networking",
+      "traffic-management"
+    ]
+  },
+  "map": {
+    "group": "traffic-management"
+  }
+}

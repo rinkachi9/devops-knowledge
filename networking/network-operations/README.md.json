@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.network-operations",
+    "kind": "index",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "networking",
+      "network-operations"
+    ]
+  },
+  "map": {
+    "group": "network-operations"
+  }
+}

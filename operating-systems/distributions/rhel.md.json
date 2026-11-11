@@ -1,0 +1,66 @@
+{
+  "node": {
+    "id": "operating-systems.distributions.rhel",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "distributions",
+      "rhel",
+      "dnf",
+      "selinux"
+    ],
+    "aliases": [
+      "Red Hat Enterprise Linux",
+      "dnf",
+      "yum",
+      "CentOS",
+      "AlmaLinux",
+      "Rocky Linux",
+      "Fedora"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rhel-docs",
+      "type": "documentation",
+      "publisher": "Red Hat",
+      "title": "Red Hat Enterprise Linux documentation",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "epel",
+      "type": "documentation",
+      "publisher": "Fedora project",
+      "title": "EPEL",
+      "url": "https://docs.fedoraproject.org/en-US/epel/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "dnf",
+      "anchor": "#package-management",
+      "definition": "The RPM package manager of RHEL and Fedora, successor of yum."
+    },
+    {
+      "term": "CentOS Stream",
+      "anchor": "#position-and-target-users",
+      "definition": "The continuously delivered distribution that previews the next RHEL minor release."
+    }
+  ],
+  "map": {
+    "group": "distributions"
+  }
+}

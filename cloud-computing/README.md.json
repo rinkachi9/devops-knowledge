@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "cloud-computing",
+    "kind": "index",
+    "status": "draft",
+    "order": 8,
+    "tags": [
+      "cloud-computing"
+    ]
+  },
+  "map": {
+    "group": "cloud-computing"
+  }
+}

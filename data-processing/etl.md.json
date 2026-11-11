@@ -1,0 +1,72 @@
+{
+  "node": {
+    "id": "data-processing.etl",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "data-processing",
+      "etl",
+      "elt",
+      "data-warehouse",
+      "pipelines"
+    ],
+    "aliases": [
+      "extract transform load",
+      "ELT",
+      "data pipeline"
+    ]
+  },
+  "sources": [
+    {
+      "key": "kimball-toolkit",
+      "type": "book",
+      "publisher": "Wiley",
+      "title": "The Data Warehouse Toolkit, 3rd edition",
+      "url": "https://www.wiley.com/en-us/The+Data+Warehouse+Toolkit%3A+The+Definitive+Guide+to+Dimensional+Modeling%2C+3rd+Edition-p-9781118530801",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "fode",
+      "type": "book",
+      "publisher": "O'Reilly",
+      "title": "Fundamentals of Data Engineering",
+      "url": "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "airflow-docs",
+      "type": "documentation",
+      "publisher": "Apache Software Foundation",
+      "title": "Apache Airflow documentation",
+      "url": "https://airflow.apache.org/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "ETL",
+      "anchor": "#the-three-steps",
+      "definition": "Extract, transform, load: moving data from sources through cleaning and reshaping into a target such as a warehouse."
+    },
+    {
+      "term": "ELT",
+      "anchor": "#etl-compared-with-elt",
+      "definition": "Loading raw data into the warehouse first and transforming it there."
+    },
+    {
+      "term": "Idempotent load",
+      "anchor": "#operating-pipelines-as-a-devops-practice",
+      "definition": "A load that gives the same result when rerun for the same input."
+    }
+  ],
+  "map": {
+    "group": "data-processing"
+  }
+}

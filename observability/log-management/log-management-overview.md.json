@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "observability.log-management.log-management-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "observability",
+      "logs",
+      "log-management",
+      "syslog"
+    ],
+    "aliases": [
+      "logging",
+      "centralized logging",
+      "syslog",
+      "structured logging"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.observability-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc5424",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 5424: The Syslog Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc5424",
+      "year": 2009,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-92",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-92: Guide to Computer Security Log Management",
+      "url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+      "year": 2006,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "otel-logs",
+      "type": "documentation",
+      "publisher": "OpenTelemetry, CNCF",
+      "title": "Logs",
+      "url": "https://opentelemetry.io/docs/concepts/signals/logs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Log management",
+      "anchor": "#summary",
+      "definition": "Handling log events through collection, aggregation, parsing, storage, analysis, archiving and disposal."
+    },
+    {
+      "term": "Structured logging",
+      "anchor": "#structured-logging",
+      "definition": "Writing log events as records with named fields, usually JSON."
+    },
+    {
+      "term": "Syslog",
+      "anchor": "#syslog",
+      "definition": "The standard protocol for log messages with facility and severity fields, defined in RFC 5424."
+    }
+  ],
+  "map": {
+    "group": "log-management"
+  }
+}

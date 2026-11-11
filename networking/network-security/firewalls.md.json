@@ -1,0 +1,80 @@
+{
+  "node": {
+    "id": "networking.network-security.firewalls",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "security",
+      "firewall"
+    ],
+    "aliases": [
+      "firewall",
+      "stateful firewall",
+      "NGFW",
+      "WAF",
+      "iptables",
+      "nftables",
+      "security groups",
+      "default deny"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.internet-layer.ip",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-41",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-41 Rev. 1: Guidelines on Firewalls and Firewall Policy",
+      "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+      "year": 2009,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nftables-wiki",
+      "type": "documentation",
+      "publisher": "netfilter project",
+      "title": "nftables wiki",
+      "url": "https://wiki.nftables.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "owasp-waf",
+      "type": "website",
+      "publisher": "OWASP",
+      "title": "Web Application Firewall",
+      "url": "https://owasp.org/www-community/Web_Application_Firewall",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Firewall",
+      "anchor": "#definition-and-purpose",
+      "definition": "A control that allows or blocks network traffic according to rules."
+    },
+    {
+      "term": "Stateful inspection",
+      "anchor": "#how-it-works",
+      "definition": "Tracking connections so packets are judged in the context of their session."
+    },
+    {
+      "term": "Default deny",
+      "anchor": "#policies",
+      "definition": "Blocking all traffic not explicitly allowed."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "node": {
+    "id": "operating-systems.shell-and-terminal.bash",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "bash",
+      "shell",
+      "scripting"
+    ],
+    "aliases": [
+      "Bourne Again Shell",
+      "shell scripting",
+      "shebang"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.shell-and-terminal.terminal",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "bash-manual",
+      "type": "documentation",
+      "publisher": "GNU Project",
+      "title": "GNU Bash Reference Manual",
+      "url": "https://www.gnu.org/software/bash/manual/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "bash-pitfalls",
+      "type": "website",
+      "publisher": "Greg's Wiki",
+      "title": "Bash Pitfalls",
+      "url": "https://mywiki.wooledge.org/BashPitfalls",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "google-shell",
+      "type": "website",
+      "publisher": "Google",
+      "title": "Shell Style Guide",
+      "url": "https://google.github.io/styleguide/shellguide.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Bash",
+      "anchor": "#definition-and-purpose",
+      "definition": "The GNU Bourne Again Shell, a command interpreter and scripting language for Unix-like systems."
+    },
+    {
+      "term": "Shebang",
+      "anchor": "#bash-scripting",
+      "definition": "The first line of a script, starting with #!, that names the interpreter."
+    },
+    {
+      "term": "Strict mode",
+      "anchor": "#debugging-and-error-handling",
+      "definition": "The set -euo pipefail header that makes scripts fail on errors and unset variables."
+    }
+  ],
+  "map": {
+    "group": "shell-and-terminal"
+  }
+}

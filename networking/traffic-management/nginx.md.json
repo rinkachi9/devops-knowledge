@@ -1,0 +1,84 @@
+{
+  "node": {
+    "id": "networking.traffic-management.nginx",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 10,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "nginx",
+      "web-server",
+      "tool"
+    ],
+    "aliases": [
+      "NGINX",
+      "engine x",
+      "nginx reload",
+      "worker processes",
+      "NGINX Plus"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.reverse-proxy",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "inside-nginx",
+      "type": "website",
+      "publisher": "F5 NGINX",
+      "title": "Inside NGINX: How We Designed for Performance and Scale",
+      "url": "https://blog.nginx.org/blog/inside-nginx-how-we-designed-for-performance-scale",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nginx-docs",
+      "type": "documentation",
+      "publisher": "nginx project",
+      "title": "nginx documentation",
+      "url": "https://nginx.org/en/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "aosa-nginx",
+      "type": "book",
+      "publisher": "AOSA",
+      "title": "The Architecture of Open Source Applications, Volume II: nginx",
+      "url": "https://aosabook.org/en/v2/nginx.html",
+      "year": 2012,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Master process",
+      "anchor": "#process-model",
+      "definition": "The privileged nginx process that reads configuration, binds ports and supervises workers."
+    },
+    {
+      "term": "Worker process",
+      "anchor": "#process-model",
+      "definition": "A single-threaded nginx process that handles many connections with a non-blocking event loop."
+    },
+    {
+      "term": "Graceful reload",
+      "anchor": "#configuration-updates-without-downtime",
+      "definition": "Replacing workers with new configuration while old ones finish current requests."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

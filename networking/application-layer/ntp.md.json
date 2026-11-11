@@ -1,0 +1,89 @@
+{
+  "node": {
+    "id": "networking.application-layer.ntp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "application-layer",
+      "ntp",
+      "time"
+    ],
+    "aliases": [
+      "Network Time Protocol",
+      "stratum",
+      "chrony",
+      "NTS",
+      "PTP",
+      "SNTP"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.networking-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc5905",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 5905: Network Time Protocol Version 4",
+      "url": "https://www.rfc-editor.org/rfc/rfc5905",
+      "year": 2010,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8915",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8915: Network Time Security for NTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc8915",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "chrony-docs",
+      "type": "documentation",
+      "publisher": "chrony project",
+      "title": "chrony documentation",
+      "url": "https://chrony-project.org/documentation.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cve-2013-5211",
+      "type": "website",
+      "publisher": "NIST NVD",
+      "title": "CVE-2013-5211",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-5211",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Stratum",
+      "anchor": "#stratum-hierarchy",
+      "definition": "The distance of an NTP server from a reference clock in the time hierarchy."
+    },
+    {
+      "term": "Clock offset",
+      "anchor": "#synchronization-offset-and-delay",
+      "definition": "The difference between client and server clocks computed from four timestamps."
+    },
+    {
+      "term": "NTS",
+      "anchor": "#vulnerabilities-and-mitigation",
+      "definition": "Network Time Security, cryptographic authentication for NTP."
+    }
+  ],
+  "map": {
+    "group": "application-layer"
+  }
+}

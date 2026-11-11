@@ -1,0 +1,66 @@
+{
+  "node": {
+    "id": "networking.traffic-management.forward-proxy",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "proxy",
+      "egress"
+    ],
+    "aliases": [
+      "outbound proxy",
+      "Squid",
+      "egress proxy",
+      "intercepting proxy"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.proxies",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.traffic-management.reverse-proxy",
+      "rel": "contrasts"
+    }
+  ],
+  "sources": [
+    {
+      "key": "squid-config",
+      "type": "documentation",
+      "publisher": "Squid project",
+      "title": "Squid configuration reference",
+      "url": "https://www.squid-cache.org/Doc/config/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "zap-docs",
+      "type": "documentation",
+      "publisher": "ZAP project",
+      "title": "OWASP ZAP documentation",
+      "url": "https://www.zaproxy.org/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Forward proxy",
+      "anchor": "#definition-and-flow",
+      "definition": "A proxy that clients use to reach external servers, applying policy, caching and logging."
+    },
+    {
+      "term": "Egress control",
+      "anchor": "#forward-proxies-in-devops",
+      "definition": "Restricting outbound traffic from internal systems to approved destinations."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

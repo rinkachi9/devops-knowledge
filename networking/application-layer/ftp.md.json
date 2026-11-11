@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "networking.application-layer.ftp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 5,
+    "tags": [
+      "networking",
+      "application-layer",
+      "ftp",
+      "file-transfer"
+    ],
+    "aliases": [
+      "File Transfer Protocol",
+      "FTPS",
+      "SFTP",
+      "TFTP",
+      "active mode",
+      "passive mode"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.transport-layer.ports",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc959",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 959: File Transfer Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc959",
+      "year": 1985,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc4217",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4217: Securing FTP with TLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc4217",
+      "year": 2005,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc1350",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1350: The TFTP Protocol (Revision 2)",
+      "url": "https://www.rfc-editor.org/rfc/rfc1350",
+      "year": 1992,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Passive mode",
+      "anchor": "#how-ftp-works",
+      "definition": "FTP mode in which the client opens the data connection to a port announced by the server."
+    },
+    {
+      "term": "SFTP",
+      "anchor": "#variants",
+      "definition": "The SSH File Transfer Protocol, unrelated to FTP, running inside SSH on port 22."
+    }
+  ],
+  "map": {
+    "group": "application-layer"
+  }
+}

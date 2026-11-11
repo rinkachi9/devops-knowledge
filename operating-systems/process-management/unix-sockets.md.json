@@ -1,0 +1,79 @@
+{
+  "node": {
+    "id": "operating-systems.process-management.unix-sockets",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "operating-systems",
+      "ipc",
+      "sockets",
+      "networking"
+    ],
+    "aliases": [
+      "socket",
+      "Unix domain socket",
+      "AF_UNIX",
+      "Berkeley sockets",
+      "BSD sockets",
+      "IPC"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "man-socket7",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "socket(7)",
+      "url": "https://man7.org/linux/man-pages/man7/socket.7.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-unix7",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "unix(7)",
+      "url": "https://man7.org/linux/man-pages/man7/unix.7.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "unp",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "UNIX Network Programming, Volume 1, 3rd edition",
+      "url": "https://www.pearson.com/",
+      "year": 2003,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Socket",
+      "anchor": "#definition-and-the-problem-sockets-solve",
+      "definition": "A kernel endpoint, accessed through a file descriptor, for bidirectional communication between processes."
+    },
+    {
+      "term": "Unix domain socket",
+      "anchor": "#communication-domains",
+      "definition": "A socket addressed by a file system path that connects processes on the same host."
+    },
+    {
+      "term": "Stream socket",
+      "anchor": "#socket-types",
+      "definition": "A reliable, ordered, connection-oriented byte stream socket."
+    }
+  ],
+  "map": {
+    "group": "process-management"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.system-administration",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "operating-systems",
+      "system-administration"
+    ]
+  },
+  "map": {
+    "group": "system-administration"
+  }
+}

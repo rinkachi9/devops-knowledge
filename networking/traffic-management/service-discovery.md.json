@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "networking.traffic-management.service-discovery",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 8,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "service-discovery",
+      "microservices"
+    ],
+    "aliases": [
+      "service registry",
+      "client-side discovery",
+      "server-side discovery",
+      "Consul",
+      "Eureka"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.load-balancing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "msio-registry",
+      "type": "website",
+      "publisher": "microservices.io",
+      "title": "Pattern: Service registry",
+      "url": "https://microservices.io/patterns/service-registry.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "k8s-service",
+      "type": "documentation",
+      "publisher": "Kubernetes",
+      "title": "Service",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/service/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "consul-sd",
+      "type": "documentation",
+      "publisher": "HashiCorp",
+      "title": "Consul service discovery",
+      "url": "https://developer.hashicorp.com/consul/docs/concepts/service-discovery",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Service discovery",
+      "anchor": "#the-problem",
+      "definition": "Finding the current network locations of service instances in a dynamic environment."
+    },
+    {
+      "term": "Service registry",
+      "anchor": "#service-registry",
+      "definition": "A highly available database of live service instance locations."
+    },
+    {
+      "term": "Third-party registration",
+      "anchor": "#registration-options",
+      "definition": "A registrar component registers instances by watching the platform."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

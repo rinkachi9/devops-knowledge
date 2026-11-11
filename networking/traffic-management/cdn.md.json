@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "networking.traffic-management.cdn",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 9,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "cdn",
+      "caching"
+    ],
+    "aliases": [
+      "content delivery network",
+      "edge",
+      "push CDN",
+      "pull CDN",
+      "cache invalidation"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.reverse-proxy",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cf-cdn",
+      "type": "website",
+      "publisher": "Cloudflare",
+      "title": "What is a CDN?",
+      "url": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc9111",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 9111: HTTP Caching",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cloudfront",
+      "type": "documentation",
+      "publisher": "Amazon Web Services",
+      "title": "Amazon CloudFront Developer Guide",
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "CDN",
+      "anchor": "#definition",
+      "definition": "A globally distributed network of caching proxies that serve content close to users."
+    },
+    {
+      "term": "Pull CDN",
+      "anchor": "#push-and-pull-cdns",
+      "definition": "A CDN that fetches content from the origin on the first request and caches it for its TTL."
+    },
+    {
+      "term": "Cache hit ratio",
+      "anchor": "#worked-example",
+      "definition": "The share of requests served from cache without contacting the origin."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "observability.log-management.papertrail",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 4,
+    "tags": [
+      "observability",
+      "logs",
+      "papertrail",
+      "saas",
+      "tool"
+    ],
+    "aliases": [
+      "SolarWinds Papertrail",
+      "live tail"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.log-management.log-management-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "papertrail-help",
+      "type": "documentation",
+      "publisher": "SolarWinds",
+      "title": "Papertrail knowledge base",
+      "url": "https://www.papertrail.com/help/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc5425",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 5425: TLS Transport Mapping for Syslog",
+      "url": "https://www.rfc-editor.org/rfc/rfc5425",
+      "year": 2009,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Live tail",
+      "anchor": "#core-vocabulary",
+      "definition": "A real-time stream of incoming logs from all sources, like tail -f across machines."
+    }
+  ],
+  "map": {
+    "group": "log-management"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "node": {
+    "id": "observability.log-management.loki",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "observability",
+      "logs",
+      "loki",
+      "grafana",
+      "kubernetes",
+      "tool"
+    ],
+    "aliases": [
+      "Grafana Loki",
+      "LogQL",
+      "Promtail",
+      "Grafana Alloy"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.log-management.log-management-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "observability.log-management.elastic-stack",
+      "rel": "contrasts",
+      "note": "Label index compared with full-text index"
+    }
+  ],
+  "sources": [
+    {
+      "key": "loki-docs",
+      "type": "documentation",
+      "publisher": "Grafana Labs",
+      "title": "Grafana Loki documentation",
+      "url": "https://grafana.com/docs/loki/latest/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "logql",
+      "type": "documentation",
+      "publisher": "Grafana Labs",
+      "title": "LogQL",
+      "url": "https://grafana.com/docs/loki/latest/query/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "loki-labels-bp",
+      "type": "documentation",
+      "publisher": "Grafana Labs",
+      "title": "Label best practices",
+      "url": "https://grafana.com/docs/loki/latest/get-started/labels/bp-labels/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Log stream",
+      "anchor": "#data-model",
+      "definition": "A unique combination of labels in Loki, stored as its own sequence of chunks."
+    },
+    {
+      "term": "LogQL",
+      "anchor": "#logql",
+      "definition": "Loki's query language: a label stream selector followed by a pipeline of filters, parsers and aggregations."
+    },
+    {
+      "term": "Label cardinality",
+      "anchor": "#cardinality",
+      "definition": "The number of distinct label value combinations, which determines the number of Loki streams."
+    }
+  ],
+  "map": {
+    "group": "log-management"
+  }
+}

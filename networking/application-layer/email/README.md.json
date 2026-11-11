@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.application-layer.email",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "networking",
+      "email"
+    ]
+  },
+  "map": {
+    "group": "email"
+  }
+}

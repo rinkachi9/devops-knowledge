@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "operating-systems.memory-management.memory-management",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "memory",
+      "paging",
+      "virtual-memory"
+    ],
+    "aliases": [
+      "virtual memory",
+      "paging",
+      "segmentation",
+      "swapping",
+      "heap",
+      "fragmentation"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "silberschatz",
+      "type": "book",
+      "publisher": "Wiley",
+      "title": "Operating System Concepts, 10th edition",
+      "url": "https://www.os-book.com/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "ostep",
+      "type": "book",
+      "publisher": "Arpaci-Dusseau",
+      "title": "Operating Systems: Three Easy Pieces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Paging",
+      "anchor": "#paging",
+      "definition": "Dividing address spaces into fixed-size pages mapped to physical frames through a page table."
+    },
+    {
+      "term": "Fragmentation",
+      "anchor": "#fragmentation",
+      "definition": "Free memory broken into pieces too small or scattered to use."
+    },
+    {
+      "term": "Swapping",
+      "anchor": "#swapping",
+      "definition": "Moving processes or pages between RAM and disk to free memory."
+    }
+  ],
+  "map": {
+    "group": "memory-management"
+  }
+}

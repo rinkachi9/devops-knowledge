@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.application-layer",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "networking",
+      "application-layer"
+    ]
+  },
+  "map": {
+    "group": "application-layer"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "site-reliability-engineering",
+    "kind": "index",
+    "status": "draft",
+    "order": 11,
+    "tags": [
+      "site-reliability-engineering"
+    ]
+  },
+  "map": {
+    "group": "site-reliability-engineering"
+  }
+}

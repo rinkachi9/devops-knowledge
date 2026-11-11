@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.application-monitoring",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "observability",
+      "apm",
+      "application-monitoring"
+    ],
+    "aliases": [
+      "APM",
+      "application performance monitoring",
+      "Apdex"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "apdex",
+      "type": "standard",
+      "publisher": "Apdex Alliance",
+      "title": "Apdex specification",
+      "url": "https://www.apdex.org/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "w3c-trace-context",
+      "type": "standard",
+      "publisher": "W3C",
+      "title": "Trace Context",
+      "url": "https://www.w3.org/TR/trace-context/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "otel-docs",
+      "type": "documentation",
+      "publisher": "OpenTelemetry, CNCF",
+      "title": "OpenTelemetry documentation",
+      "url": "https://opentelemetry.io/docs/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Application performance monitoring",
+      "anchor": "#definition-and-scope",
+      "definition": "Monitoring applications from inside with agents or instrumentation to see transactions, errors and dependencies."
+    },
+    {
+      "term": "Apdex",
+      "anchor": "#worked-example",
+      "definition": "A 0 to 1 score of user satisfaction computed from satisfied, tolerating and frustrated requests relative to a target time."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

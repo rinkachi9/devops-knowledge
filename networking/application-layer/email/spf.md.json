@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "networking.application-layer.email.spf",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "networking",
+      "email",
+      "spf",
+      "security"
+    ],
+    "aliases": [
+      "Sender Policy Framework",
+      "v=spf1",
+      "SPF record",
+      "SPF flattening"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.email.smtp",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc7208",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7208: Sender Policy Framework (SPF), Version 1",
+      "url": "https://www.rfc-editor.org/rfc/rfc7208",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8617",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8617: The Authenticated Received Chain (ARC) Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc8617",
+      "year": 2019,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "SPF",
+      "anchor": "#definition-and-importance",
+      "definition": "A DNS policy listing the servers allowed to send mail for a domain's envelope sender."
+    },
+    {
+      "term": "SPF qualifier",
+      "anchor": "#mechanisms-and-qualifiers",
+      "definition": "The prefix of a mechanism that sets the result: pass, fail, softfail or neutral."
+    },
+    {
+      "term": "Ten-lookup limit",
+      "anchor": "#limitations-and-workarounds",
+      "definition": "SPF evaluation may use at most 10 DNS lookups before a permanent error."
+    }
+  ],
+  "map": {
+    "group": "email"
+  }
+}

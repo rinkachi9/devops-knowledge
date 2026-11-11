@@ -1,0 +1,85 @@
+{
+  "node": {
+    "id": "networking.link-layer.vlan",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "link-layer",
+      "vlan",
+      "segmentation"
+    ],
+    "aliases": [
+      "virtual LAN",
+      "802.1Q",
+      "trunk",
+      "VLAN hopping",
+      "VXLAN",
+      "private VLAN"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.link-layer.switch",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ieee8021q",
+      "type": "standard",
+      "publisher": "IEEE",
+      "title": "IEEE 802.1Q-2022: Bridges and Bridged Networks",
+      "url": "https://standards.ieee.org/ieee/802.1Q/10323/",
+      "year": 2022,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc7348",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7348: Virtual eXtensible Local Area Network (VXLAN)",
+      "url": "https://www.rfc-editor.org/rfc/rfc7348",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "attack-t1557",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "ATT&CK T1557: Adversary-in-the-Middle",
+      "url": "https://attack.mitre.org/techniques/T1557/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "VLAN",
+      "anchor": "#definition-and-use-cases",
+      "definition": "A logical layer 2 network and broadcast domain carved out of physical switches."
+    },
+    {
+      "term": "802.1Q tag",
+      "anchor": "#vlan-tagging-with-ieee-8021q",
+      "definition": "A 4-byte Ethernet header field carrying the VLAN ID and priority."
+    },
+    {
+      "term": "Trunk port",
+      "anchor": "#vlan-tagging-with-ieee-8021q",
+      "definition": "A switch port that carries frames of many VLANs with tags."
+    },
+    {
+      "term": "Inter-VLAN routing",
+      "anchor": "#inter-vlan-routing",
+      "definition": "Routing traffic between VLAN subnets with a router or layer 3 switch."
+    }
+  ],
+  "map": {
+    "group": "link-layer"
+  }
+}

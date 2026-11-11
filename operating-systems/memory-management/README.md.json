@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "operating-systems.memory-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "operating-systems",
+      "memory-management"
+    ]
+  },
+  "map": {
+    "group": "memory-management"
+  }
+}

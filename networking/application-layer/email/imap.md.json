@@ -1,0 +1,82 @@
+{
+  "node": {
+    "id": "networking.application-layer.email.imap",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "email",
+      "imap"
+    ],
+    "aliases": [
+      "IMAPS",
+      "Internet Message Access Protocol",
+      "IMAP4",
+      "port 993",
+      "IDLE"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.email.email-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.application-layer.email.pop3",
+      "rel": "contrasts"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc9051",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 9051: IMAP Version 4rev2",
+      "url": "https://www.rfc-editor.org/rfc/rfc9051",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc7628",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7628: A Set of SASL Mechanisms for OAuth",
+      "url": "https://www.rfc-editor.org/rfc/rfc7628",
+      "year": 2015,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "dovecot-docs",
+      "type": "documentation",
+      "publisher": "Dovecot project",
+      "title": "Dovecot documentation",
+      "url": "https://doc.dovecot.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "IMAP",
+      "anchor": "#definition",
+      "definition": "A protocol to access and manage server-side mailboxes, synchronized across devices."
+    },
+    {
+      "term": "IMAPS",
+      "anchor": "#securing-imap",
+      "definition": "IMAP over implicit TLS on port 993."
+    },
+    {
+      "term": "Message flags",
+      "anchor": "#commands-and-responses",
+      "definition": "Server-side markers such as Seen and Deleted that every client sees."
+    }
+  ],
+  "map": {
+    "group": "email"
+  }
+}

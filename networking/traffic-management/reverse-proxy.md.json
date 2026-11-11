@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "networking.traffic-management.reverse-proxy",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "networking",
+      "traffic-management",
+      "proxy",
+      "http"
+    ],
+    "aliases": [
+      "gateway",
+      "inbound proxy",
+      "TLS termination",
+      "X-Forwarded-For"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.traffic-management.proxies",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.traffic-management.load-balancing",
+      "rel": "related",
+      "note": "A reverse proxy is often also the load balancer"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cf-reverse-proxy",
+      "type": "website",
+      "publisher": "Cloudflare",
+      "title": "What is a reverse proxy?",
+      "url": "https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nginx-rp",
+      "type": "documentation",
+      "publisher": "F5 NGINX",
+      "title": "NGINX reverse proxy",
+      "url": "https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc7239",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 7239: Forwarded HTTP Extension",
+      "url": "https://www.rfc-editor.org/rfc/rfc7239",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Reverse proxy",
+      "anchor": "#definition",
+      "definition": "A server that accepts client requests on behalf of backend servers and forwards them."
+    },
+    {
+      "term": "TLS termination",
+      "anchor": "#benefits",
+      "definition": "Decrypting TLS at the proxy so backends receive plain or re-encrypted traffic."
+    }
+  ],
+  "map": {
+    "group": "traffic-management"
+  }
+}

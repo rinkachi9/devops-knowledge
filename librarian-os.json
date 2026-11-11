@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "project": {
+    "name": "DevOps Knowledge",
+    "description": "A personal knowledge base about DevOps: culture and practices, the operating system and networking foundations, CI/CD, infrastructure as code, containers, cloud, observability, DevSecOps and SRE, organized along the roadmap.sh DevOps roadmap and the DevOps lifecycle.",
+    "language": "en"
+  },
+  "entryPoints": [
+    {
+      "path": "foundations"
+    },
+    {
+      "path": "operating-systems"
+    },
+    {
+      "path": "networking"
+    },
+    {
+      "path": "version-control"
+    },
+    {
+      "path": "ci-cd"
+    },
+    {
+      "path": "infrastructure-as-code"
+    },
+    {
+      "path": "containers-and-virtualization"
+    },
+    {
+      "path": "cloud-computing"
+    },
+    {
+      "path": "observability"
+    },
+    {
+      "path": "devsecops"
+    },
+    {
+      "path": "site-reliability-engineering"
+    },
+    {
+      "path": "data-processing"
+    }
+  ],
+  "ignore": [
+    "_assets"
+  ],
+  "toc": {
+    "file": "ToC.md",
+    "check": true,
+    "descriptions": {
+      ".gitignore": "Files excluded from version control.",
+      "_assets/ci-cd/ci-cd-overview-devops-infinity-loop.png": "Figure used in the note \"Table of contents\".",
+      "_assets/ci-cd/ci-cd-overview-pipeline-stages.png": "Figure used in the note \"Table of contents\".",
+      "_assets/containers-and-virtualization/docker-eight-core-concepts.png": "Figure used in the note \"Table of contents\".",
+      "_assets/containers-and-virtualization/virtualization-architecture-virtual-services.png": "Figure used in the note \"Table of contents\".",
+      "_assets/containers-and-virtualization/virtualization-bare-metal-architecture.png": "Figure used in the note \"Table of contents\".",
+      "_assets/containers-and-virtualization/virtualization-cloud-provider-and-end-user.png": "Figure used in the note \"Table of contents\".",
+      "_assets/containers-and-virtualization/virtualization-hosted-architecture.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/cdn-content-delivery-overview.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/cdn-edge-servers.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/cdn-how-it-works.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/dns-overview-record-request-sequence.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/dns-overview-resolution-route53.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/dns-records-record-types.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/dns-security-dns-hijacking.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/domain-names-registrant-registrar-registry.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/load-balancing-layer-4.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/load-balancing-layer-7.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/load-balancing-use-cases.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/networking-overview-physical-network-diagram.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/nginx-config-reload.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/nginx-process-architecture.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/nginx-state-machine.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/nginx-worker-event-loop.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/osi-model-seven-layers.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/reverse-proxy-request-flow.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-discovery-client-side-discovery.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-discovery-communication-flow.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-discovery-self-registration.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-discovery-server-side-discovery.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-discovery-third-party-registration.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-mesh-control-and-data-plane.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-mesh-ingress-egress-and-telemetry.png": "Figure used in the note \"Table of contents\".",
+      "_assets/networking/service-mesh-istio-north-south-and-east-west-traffic.png": "Figure used in the note \"Table of contents\".",
+      "_assets/observability/nagios-overview-objects-and-status.png": "Figure used in the note \"Table of contents\".",
+      "_assets/observability/nagios-process-scheduler-and-plugins.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/cpu-usage-nine-causes-of-high-cpu.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/file-descriptors-tables.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/file-systems-architecture-partitions.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/file-systems-three-layers.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/io-management-cpu-controllers-bus.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/io-management-interface-unit-block-diagram.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/io-management-io-interface.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-fragmentation-compaction.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-os-layers.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-paging-address-translation.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-paging-pages-and-frames.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-segmentation-map-table.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/memory-management-swapping.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-batch-os-jobs-and-monitor.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-batch-os-resident-monitor-memory-layout.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-distributed-system-view.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-multiprocessor-system-working.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-multiprogramming-jobs.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-network-os-agents.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-os-layered-system-stack.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-os-layers-ellipse.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-os-users-software-hardware.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-rtos-overview.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-time-sharing-eight-users.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-types-of-multiprocessing.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-types-of-multitasking.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-types-of-network-os.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-types-of-operating-systems.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/operating-system-overview-types-of-rtos.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/processes-kill-l-signal-list.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/processes-process-state-diagram.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/startup-management-init-d-ssh-script.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/startup-management-linux-boot-process.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/startup-management-systemctl-status-sshd.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/startup-management-systemd-unit-file.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/threads-single-and-multi-threaded-process.png": "Figure used in the note \"Table of contents\".",
+      "_assets/operating-systems/threads-user-and-kernel-level-threads.png": "Figure used in the note \"Table of contents\".",
+      "librarian-os.json": "Configuration for Librarian OS: project name, entry points and rules."
+    }
+  },
+  "rules": {
+    "requireSidecars": true,
+    "noLongDashes": true
+  }
+}

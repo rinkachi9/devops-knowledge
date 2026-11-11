@@ -1,0 +1,65 @@
+{
+  "node": {
+    "id": "operating-systems.distributions.suse-linux",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "operating-systems",
+      "distributions",
+      "suse",
+      "opensuse",
+      "zypper"
+    ],
+    "aliases": [
+      "SLES",
+      "SUSE Linux Enterprise",
+      "openSUSE Leap",
+      "openSUSE Tumbleweed",
+      "zypper",
+      "YaST"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.operating-system-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "sles-docs",
+      "type": "documentation",
+      "publisher": "SUSE",
+      "title": "SUSE Linux Enterprise Server documentation",
+      "url": "https://documentation.suse.com/sles/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "opensuse-docs",
+      "type": "documentation",
+      "publisher": "openSUSE project",
+      "title": "openSUSE documentation",
+      "url": "https://doc.opensuse.org/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "zypper",
+      "anchor": "#package-management",
+      "definition": "The command-line package manager of SUSE and openSUSE."
+    },
+    {
+      "term": "Rolling release",
+      "anchor": "#editions-and-target-users",
+      "definition": "A distribution updated continuously instead of in versioned releases, such as Tumbleweed."
+    }
+  ],
+  "map": {
+    "group": "distributions"
+  }
+}

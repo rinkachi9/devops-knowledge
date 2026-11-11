@@ -1,0 +1,94 @@
+{
+  "node": {
+    "id": "operating-systems.process-management.process-monitoring",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "operating-systems",
+      "monitoring",
+      "linux",
+      "troubleshooting"
+    ],
+    "aliases": [
+      "top",
+      "htop",
+      "ps",
+      "vmstat",
+      "iostat",
+      "sar",
+      "pidstat",
+      "rootkit detection"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "observability.monitoring",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "gregg-sysperf",
+      "type": "book",
+      "publisher": "Addison-Wesley",
+      "title": "Systems Performance, 2nd edition",
+      "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "sysstat",
+      "type": "documentation",
+      "publisher": "sysstat project",
+      "title": "sysstat documentation",
+      "url": "https://sysstat.github.io/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "man-proc",
+      "type": "documentation",
+      "publisher": "Linux man-pages project",
+      "title": "proc(5)",
+      "url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cgroup-v2",
+      "type": "documentation",
+      "publisher": "Linux kernel documentation",
+      "title": "Control Group v2",
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Process monitoring",
+      "anchor": "#summary",
+      "definition": "Tracking processes and their resource use to detect bottlenecks, misbehavior and failures."
+    },
+    {
+      "term": "Stealth process",
+      "anchor": "#process-related-issues",
+      "definition": "A malicious process hidden from normal monitoring tools, often by a rootkit."
+    },
+    {
+      "term": "Resource contention",
+      "anchor": "#process-related-issues",
+      "definition": "Several processes competing for the same CPU, memory or I/O, degrading performance."
+    }
+  ],
+  "map": {
+    "group": "process-management"
+  }
+}

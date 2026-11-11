@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.network-security",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "networking",
+      "network-security"
+    ]
+  },
+  "map": {
+    "group": "network-security"
+  }
+}

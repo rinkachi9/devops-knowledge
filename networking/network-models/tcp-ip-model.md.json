@@ -1,0 +1,62 @@
+{
+  "node": {
+    "id": "networking.network-models.tcp-ip-model",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "networking",
+      "models",
+      "tcp-ip"
+    ],
+    "aliases": [
+      "Internet protocol suite",
+      "DoD model",
+      "TCP/IP stack"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-models.osi-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc1122",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1122: Requirements for Internet Hosts, Communication Layers",
+      "url": "https://www.rfc-editor.org/rfc/rfc1122",
+      "year": 1989,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc1123",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1123: Requirements for Internet Hosts, Application and Support",
+      "url": "https://www.rfc-editor.org/rfc/rfc1123",
+      "year": 1989,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "TCP/IP model",
+      "anchor": "#the-four-layers",
+      "definition": "The four-layer architecture of the Internet: link, internet, transport, application."
+    },
+    {
+      "term": "Narrow waist",
+      "anchor": "#the-hourglass",
+      "definition": "IP as the single common protocol between many applications and many link technologies."
+    }
+  ],
+  "map": {
+    "group": "network-models"
+  }
+}

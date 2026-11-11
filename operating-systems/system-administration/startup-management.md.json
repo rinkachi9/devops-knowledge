@@ -1,0 +1,96 @@
+{
+  "node": {
+    "id": "operating-systems.system-administration.startup-management",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "operating-systems",
+      "boot",
+      "systemd",
+      "grub",
+      "linux"
+    ],
+    "aliases": [
+      "boot process",
+      "systemd",
+      "GRUB 2",
+      "initramfs",
+      "SysV init",
+      "runlevel",
+      "systemctl",
+      "journalctl"
+    ]
+  },
+  "links": [
+    {
+      "to": "operating-systems.process-management.processes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "systemd-unit",
+      "type": "documentation",
+      "publisher": "systemd project",
+      "title": "systemd.unit(5)",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "bootup7",
+      "type": "documentation",
+      "publisher": "systemd project",
+      "title": "bootup(7)",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/bootup.html",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "grub-manual",
+      "type": "documentation",
+      "publisher": "GNU Project",
+      "title": "GNU GRUB Manual",
+      "url": "https://www.gnu.org/software/grub/manual/grub/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "both-boot",
+      "type": "website",
+      "publisher": "Opensource.com",
+      "title": "An introduction to the Linux boot and startup processes",
+      "url": "https://opensource.com/article/17/2/linux-boot-and-startup",
+      "year": 2017,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Boot sequence",
+      "anchor": "#the-boot-process",
+      "definition": "From power-on through firmware, boot loader and kernel until the init system starts."
+    },
+    {
+      "term": "Startup sequence",
+      "anchor": "#the-startup-process",
+      "definition": "What the init system does after boot to bring the system to its operational target."
+    },
+    {
+      "term": "systemd unit",
+      "anchor": "#systemd",
+      "definition": "A configuration object managed by systemd, such as a service, target, socket, timer or mount."
+    },
+    {
+      "term": "Target",
+      "anchor": "#the-startup-process",
+      "definition": "A systemd unit that groups other units into a system state, like a runlevel."
+    }
+  ],
+  "map": {
+    "group": "system-administration"
+  }
+}

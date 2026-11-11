@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "networking.application-layer.dns.domain-names",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 3,
+    "tags": [
+      "networking",
+      "application-layer",
+      "dns",
+      "domains"
+    ],
+    "aliases": [
+      "domain",
+      "TLD",
+      "registrar",
+      "registry",
+      "ICANN",
+      "FQDN",
+      "URL"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.dns.dns-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc3986",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 3986: Uniform Resource Identifier (URI): Generic Syntax",
+      "url": "https://www.rfc-editor.org/rfc/rfc3986",
+      "year": 2005,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "iana-root-db",
+      "type": "website",
+      "publisher": "IANA",
+      "title": "Root Zone Database",
+      "url": "https://www.iana.org/domains/root/db",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Top-level domain",
+      "anchor": "#structure",
+      "definition": "The rightmost label of a domain name, such as com or uk."
+    },
+    {
+      "term": "Registrar",
+      "anchor": "#registrars-and-registries",
+      "definition": "A company accredited to sell domain registrations to registrants."
+    },
+    {
+      "term": "Registry",
+      "anchor": "#registrars-and-registries",
+      "definition": "The operator of a TLD's authoritative database."
+    }
+  ],
+  "map": {
+    "group": "dns"
+  }
+}

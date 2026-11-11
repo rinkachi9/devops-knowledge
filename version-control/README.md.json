@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "version-control",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "version-control"
+    ]
+  },
+  "map": {
+    "group": "version-control"
+  }
+}

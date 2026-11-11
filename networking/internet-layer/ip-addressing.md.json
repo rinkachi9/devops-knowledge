@@ -1,0 +1,97 @@
+{
+  "node": {
+    "id": "networking.internet-layer.ip-addressing",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "networking",
+      "internet-layer",
+      "ip",
+      "ipv4",
+      "ipv6"
+    ],
+    "aliases": [
+      "IP address",
+      "subnet mask",
+      "default gateway",
+      "private IP",
+      "RFC 1918",
+      "loopback",
+      "APIPA"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.networking-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc791",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 791: Internet Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc791",
+      "year": 1981,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc1918",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 1918: Address Allocation for Private Internets",
+      "url": "https://www.rfc-editor.org/rfc/rfc1918",
+      "year": 1996,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc4291",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4291: IP Version 6 Addressing Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4291",
+      "year": 2006,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "iana-special",
+      "type": "standard",
+      "publisher": "IANA",
+      "title": "IANA IPv4 Special-Purpose Address Registry",
+      "url": "https://www.iana.org/assignments/iana-ipv4-special-registry/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "IP address",
+      "anchor": "#what-an-ip-address-is",
+      "definition": "An identifier of a network interface consisting of a network part and a host part."
+    },
+    {
+      "term": "Subnet mask",
+      "anchor": "#subnet-mask",
+      "definition": "A bit mask that separates the network part from the host part of an address."
+    },
+    {
+      "term": "Default gateway",
+      "anchor": "#default-gateway",
+      "definition": "The router a host sends traffic to when the destination is outside its subnet."
+    },
+    {
+      "term": "Private address",
+      "anchor": "#private-and-public-addresses",
+      "definition": "An RFC 1918 address that is not routed on the Internet."
+    }
+  ],
+  "map": {
+    "group": "internet-layer"
+  }
+}

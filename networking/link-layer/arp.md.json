@@ -1,0 +1,84 @@
+{
+  "node": {
+    "id": "networking.link-layer.arp",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "networking",
+      "link-layer",
+      "arp",
+      "security"
+    ],
+    "aliases": [
+      "Address Resolution Protocol",
+      "ARP spoofing",
+      "ARP poisoning",
+      "gratuitous ARP",
+      "proxy ARP",
+      "NDP"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.link-layer.switch",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.internet-layer.ip-addressing",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc826",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 826: An Ethernet Address Resolution Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc826",
+      "year": 1982,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc4861",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4861: Neighbor Discovery for IP version 6",
+      "url": "https://www.rfc-editor.org/rfc/rfc4861",
+      "year": 2007,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "attack-t1557-002",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "ATT&CK T1557.002: ARP Cache Poisoning",
+      "url": "https://attack.mitre.org/techniques/T1557/002/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "ARP",
+      "anchor": "#definition",
+      "definition": "A protocol that maps IPv4 addresses to MAC addresses on the local network."
+    },
+    {
+      "term": "Gratuitous ARP",
+      "anchor": "#types-of-arp",
+      "definition": "An unsolicited ARP announcement of one's own IP-to-MAC mapping."
+    },
+    {
+      "term": "ARP spoofing",
+      "anchor": "#arp-spoofing-and-poisoning",
+      "definition": "Forged ARP replies that redirect traffic through an attacker."
+    }
+  ],
+  "map": {
+    "group": "link-layer"
+  }
+}

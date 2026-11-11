@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "networking.network-types",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "networking",
+      "lan",
+      "wan",
+      "wifi"
+    ],
+    "aliases": [
+      "LAN",
+      "WAN",
+      "MAN",
+      "PAN",
+      "CAN",
+      "WLAN",
+      "Wi-Fi",
+      "SD-WAN",
+      "MPLS"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.networking-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ieee80211",
+      "type": "standard",
+      "publisher": "IEEE",
+      "title": "IEEE 802.11 Working Group",
+      "url": "https://www.ieee802.org/11/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc3031",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 3031: Multiprotocol Label Switching Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc3031",
+      "year": 2001,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "LAN",
+      "anchor": "#lan-local-area-network",
+      "definition": "A network restricted to one location such as a building."
+    },
+    {
+      "term": "WAN",
+      "anchor": "#wan-wide-area-network",
+      "definition": "A network spanning large areas such as countries, usually over carrier services."
+    },
+    {
+      "term": "SD-WAN",
+      "anchor": "#wan-wide-area-network",
+      "definition": "Software that steers WAN traffic dynamically over several links by policy."
+    }
+  ],
+  "map": {
+    "group": "networking"
+  }
+}

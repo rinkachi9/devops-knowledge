@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "networking.network-models",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "networking",
+      "network-models"
+    ]
+  },
+  "map": {
+    "group": "network-models"
+  }
+}

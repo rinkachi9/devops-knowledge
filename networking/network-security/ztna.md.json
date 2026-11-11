@@ -1,0 +1,85 @@
+{
+  "node": {
+    "id": "networking.network-security.ztna",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 5,
+    "tags": [
+      "networking",
+      "security",
+      "zero-trust",
+      "microsegmentation"
+    ],
+    "aliases": [
+      "zero trust",
+      "ZTNA",
+      "zero trust network access",
+      "microsegmentation",
+      "BeyondCorp",
+      "software-defined perimeter"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.network-security.dmz",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "networking.network-security.vpn",
+      "rel": "contrasts"
+    }
+  ],
+  "sources": [
+    {
+      "key": "nist-800-207",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-207: Zero Trust Architecture",
+      "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "year": 2020,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "cisa-ztmm",
+      "type": "standard",
+      "publisher": "CISA",
+      "title": "Zero Trust Maturity Model 2.0",
+      "url": "https://www.cisa.gov/zero-trust-maturity-model",
+      "year": 2023,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "beyondcorp",
+      "type": "paper",
+      "publisher": "Google",
+      "title": "BeyondCorp: A New Approach to Enterprise Security",
+      "url": "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/",
+      "year": 2014,
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Zero trust",
+      "anchor": "#definition",
+      "definition": "A security model in which no access is trusted by network location and every request is verified."
+    },
+    {
+      "term": "ZTNA",
+      "anchor": "#definition",
+      "definition": "Per-application access through identity-aware gateways instead of network-level VPN access."
+    },
+    {
+      "term": "Microsegmentation",
+      "anchor": "#microsegmentation",
+      "definition": "Segmentation down to individual workloads that restricts east-west traffic."
+    }
+  ],
+  "map": {
+    "group": "network-security"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "node": {
+    "id": "networking.application-layer.dns.dns-security",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 4,
+    "tags": [
+      "networking",
+      "application-layer",
+      "dns",
+      "security",
+      "dnssec"
+    ],
+    "aliases": [
+      "DNSSEC",
+      "cache poisoning",
+      "DNS spoofing",
+      "DNS hijacking",
+      "DNS tunneling",
+      "DoH",
+      "DoT",
+      "DNS firewall"
+    ]
+  },
+  "links": [
+    {
+      "to": "networking.application-layer.dns.dns-records",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "rfc4033",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 4033: DNS Security Introduction and Requirements",
+      "url": "https://www.rfc-editor.org/rfc/rfc4033",
+      "year": 2005,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "rfc8484",
+      "type": "standard",
+      "publisher": "IETF",
+      "title": "RFC 8484: DNS Queries over HTTPS",
+      "url": "https://www.rfc-editor.org/rfc/rfc8484",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nist-800-81",
+      "type": "standard",
+      "publisher": "NIST",
+      "title": "SP 800-81-2: Secure Domain Name System Deployment Guide",
+      "url": "https://csrc.nist.gov/pubs/sp/800/81/2/final",
+      "year": 2013,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "attack-t1071-004",
+      "type": "website",
+      "publisher": "MITRE",
+      "title": "ATT&CK T1071.004: Application Layer Protocol: DNS",
+      "url": "https://attack.mitre.org/techniques/T1071/004/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DNSSEC",
+      "anchor": "#dnssec",
+      "definition": "Extensions that sign DNS data so resolvers can verify its origin and integrity."
+    },
+    {
+      "term": "Cache poisoning",
+      "anchor": "#types-of-attacks",
+      "definition": "Inserting forged records into a resolver's cache."
+    },
+    {
+      "term": "DNS tunneling",
+      "anchor": "#types-of-attacks",
+      "definition": "Encoding other protocols or data in DNS queries and responses."
+    }
+  ],
+  "map": {
+    "group": "dns"
+  }
+}

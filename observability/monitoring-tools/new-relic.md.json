@@ -1,0 +1,62 @@
+{
+  "node": {
+    "id": "observability.monitoring-tools.new-relic",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "observability",
+      "apm",
+      "new-relic",
+      "saas",
+      "tool"
+    ],
+    "aliases": [
+      "NRQL",
+      "New Relic One",
+      "NRDB"
+    ]
+  },
+  "links": [
+    {
+      "to": "observability.monitoring",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "newrelic-docs",
+      "type": "documentation",
+      "publisher": "New Relic",
+      "title": "New Relic documentation",
+      "url": "https://docs.newrelic.com/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "nrql-ref",
+      "type": "documentation",
+      "publisher": "New Relic",
+      "title": "Introduction to NRQL",
+      "url": "https://docs.newrelic.com/docs/nrql/get-started/introduction-nrql-new-relics-query-language/",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "NRQL",
+      "anchor": "#capabilities",
+      "definition": "New Relic Query Language, a SQL-like language for querying all telemetry stored in New Relic."
+    },
+    {
+      "term": "Logs in context",
+      "anchor": "#capabilities",
+      "definition": "Linking log lines to the APM transactions and traces that produced them."
+    }
+  ],
+  "map": {
+    "group": "monitoring-tools"
+  }
+}

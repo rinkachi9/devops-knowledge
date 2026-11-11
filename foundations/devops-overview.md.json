@@ -1,0 +1,86 @@
+{
+  "node": {
+    "id": "foundations.devops-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "foundations",
+      "devops",
+      "culture",
+      "dora"
+    ],
+    "aliases": [
+      "Dev and Ops",
+      "DevOps culture",
+      "CALMS",
+      "Three Ways"
+    ]
+  },
+  "sources": [
+    {
+      "key": "dora",
+      "type": "website",
+      "publisher": "DORA, Google Cloud",
+      "title": "DORA research program",
+      "url": "https://dora.dev/",
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "accelerate",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "Accelerate: The Science of Lean Software and DevOps",
+      "url": "https://itrevolution.com/product/accelerate/",
+      "year": 2018,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "devops-handbook",
+      "type": "book",
+      "publisher": "IT Revolution",
+      "title": "The DevOps Handbook, 2nd edition",
+      "url": "https://itrevolution.com/product/the-devops-handbook-second-edition/",
+      "year": 2021,
+      "verified": false,
+      "checked": "2026-11"
+    },
+    {
+      "key": "roadmap-devops",
+      "type": "website",
+      "publisher": "roadmap.sh",
+      "title": "DevOps roadmap",
+      "url": "https://roadmap.sh/devops",
+      "verified": false,
+      "checked": "2026-11"
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DevOps",
+      "anchor": "#summary",
+      "definition": "A combination of cultural philosophies, practices and tools that unifies software development and IT operations to deliver software quickly and reliably."
+    },
+    {
+      "term": "CALMS",
+      "anchor": "#key-components",
+      "definition": "Culture, Automation, Lean, Measurement and Sharing: a summary of the components of DevOps."
+    },
+    {
+      "term": "Three Ways",
+      "anchor": "#the-three-ways",
+      "definition": "Flow, feedback, and continual learning and experimentation: the principles under DevOps in The DevOps Handbook."
+    },
+    {
+      "term": "DORA metrics",
+      "anchor": "#measuring-devops-the-dora-metrics",
+      "definition": "Deployment frequency, change lead time, change failure rate and failed deployment recovery time."
+    }
+  ],
+  "map": {
+    "group": "foundations"
+  }
+}
